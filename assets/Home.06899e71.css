@@ -1,0 +1,348 @@
+@charset "UTF-8";
+@keyframes fade-up-eb6bcb36 {
+0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+/* Основной контейнер презентации */
+.bilbo-presentation[data-v-eb6bcb36] {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 40px 120px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  position: relative;
+  outline: none;
+  font-family: "circular-cyrillic", sans-serif;
+}
+
+/* Прогресс-бар сверху */
+.progress-bar[data-v-eb6bcb36] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  z-index: 100;
+}
+.progress-bar .progress-fill[data-v-eb6bcb36] {
+  height: 100%;
+  background: #1086ff;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Контентная область слайда */
+.slide-content[data-v-eb6bcb36] {
+  width: 100%;
+  max-width: 1400px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Огромный номер слайда на фоне */
+.slide-number[data-v-eb6bcb36] {
+  font-size: clamp(80px, 15vw, 160px);
+  font-weight: 900;
+  opacity: 0.03;
+  position: absolute;
+  top: -110px;
+  left: -20px;
+  line-height: 1;
+  pointer-events: none;
+  color: #ffffff;
+}
+
+/* Заголовки */
+.main-title[data-v-eb6bcb36] {
+  font-size: 14px;
+  color: #1086ff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.slide-title[data-v-eb6bcb36] {
+  font-size: clamp(32px, 5vw, 60px);
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #ffffff;
+}
+.slide-description[data-v-eb6bcb36] {
+  font-size: clamp(18px, 2vw, 24px);
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 40px;
+  max-width: 850px;
+  line-height: 1.4;
+}
+
+/* Сетка контента: Items слева, Допы справа */
+.content-grid[data-v-eb6bcb36] {
+  display: grid;
+  grid-template-columns: minmax(600px, 1fr) auto;
+  gap: 40px;
+  align-items: start;
+  width: 100%;
+}
+
+/* Список основных пунктов */
+.items-list[data-v-eb6bcb36] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.items-list .item[data-v-eb6bcb36] {
+  background: rgba(80, 77, 84, 0.15);
+  padding: clamp(24px, 3vw, 40px);
+  border-radius: 20px;
+  font-size: clamp(16px, 1.2vw, 22px);
+  border: 1px solid rgba(80, 77, 84, 0.2);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+}
+.items-list .item[data-v-eb6bcb36]:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(16, 134, 255, 0.6);
+  background: rgba(80, 77, 84, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Секция с Кейсами и Заметками */
+.extra-label[data-v-eb6bcb36] {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1086ff;
+  margin-bottom: 16px;
+  margin-top: 0;
+  font-weight: 700;
+}
+.example-card[data-v-eb6bcb36] {
+  background: rgba(50, 50, 50, 0.4);
+  padding: 16px 20px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border-left: 4px solid #eb9af2;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.notes-block[data-v-eb6bcb36] {
+  background: rgba(16, 134, 255, 0.05);
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px dashed rgba(16, 134, 255, 0.3);
+}
+.notes-block .note-item[data-v-eb6bcb36] {
+  margin-bottom: 12px;
+  font-size: 15px;
+  display: flex;
+  gap: 10px;
+  line-height: 1.4;
+}
+.notes-block .note-item[data-v-eb6bcb36]:last-child {
+  margin-bottom: 0;
+}
+.notes-block .note-item[data-v-eb6bcb36]::before {
+  content: "★";
+  color: #1086ff;
+}
+
+/* Навигация (кнопки внизу) */
+.controls[data-v-eb6bcb36] {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(50, 50, 50, 0.85);
+  backdrop-filter: blur(15px);
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 100;
+}
+.nav-btn[data-v-eb6bcb36] {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.nav-btn[data-v-eb6bcb36]:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+}
+.nav-btn[data-v-eb6bcb36]:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+.nav-btn.highlight[data-v-eb6bcb36] {
+  color: #1086ff;
+  font-weight: bold;
+}
+.slide-counter[data-v-eb6bcb36] {
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 60px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Анимации перехода слайдов */
+.slide-fade-enter-active[data-v-eb6bcb36] {
+  transition: all 0.5s ease-out;
+}
+.slide-fade-leave-active[data-v-eb6bcb36] {
+  transition: all 0.3s ease-in;
+}
+.slide-fade-enter-from[data-v-eb6bcb36] {
+  opacity: 0;
+  transform: translateX(40px);
+}
+.slide-fade-leave-to[data-v-eb6bcb36] {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+.extra-section[data-v-eb6bcb36] {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 1024px) {
+.content-grid[data-v-eb6bcb36] {
+    grid-template-columns: 1fr;
+}
+.extra-section[data-v-eb6bcb36] {
+    max-width: 100%;
+    order: -1;
+}
+.bilbo-presentation[data-v-eb6bcb36] {
+    padding: 20px;
+    justify-content: flex-start;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+.slide-title[data-v-eb6bcb36] {
+    font-size: 36px;
+}
+.items-list[data-v-eb6bcb36] {
+    grid-template-columns: 1fr;
+}
+}
+@media (max-height: 700px) {
+.slide-description[data-v-eb6bcb36] {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.item[data-v-eb6bcb36] {
+    padding: 16px;
+    font-size: 16px;
+}
+}
+@media (min-width: 2500px) {
+.slide-content[data-v-eb6bcb36] {
+    max-width: 2200px;
+}
+.items-list[data-v-eb6bcb36] {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 30px;
+}
+}
+.speaker-help[data-v-eb6bcb36] {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+.speaker-help .help-trigger[data-v-eb6bcb36] {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: help;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  color: rgb(255, 255, 255);
+}
+.speaker-help:hover .help-trigger[data-v-eb6bcb36] {
+  opacity: 1;
+  background: rgba(16, 134, 255, 0.1);
+  border-color: rgba(16, 134, 255, 0.5);
+  color: #1086ff;
+}
+.speaker-help:hover .help-popover[data-v-eb6bcb36] {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.help-popover[data-v-eb6bcb36] {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  width: 350px;
+  background: rgba(30, 30, 30, 0.95);
+  backdrop-filter: blur(20px);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(16, 134, 255, 0.3);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  pointer-events: none;
+}
+.help-popover .help-label[data-v-eb6bcb36] {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1086ff;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+/* На мобилках лучше скрыть или сделать по тапу, но для презентации с компа — идеально */
+@media (max-width: 768px) {
+.help-popover[data-v-eb6bcb36] {
+    width: 280px;
+    position: fixed;
+    top: 60px;
+    bottom: auto;
+    right: 20px;
+}
+}
