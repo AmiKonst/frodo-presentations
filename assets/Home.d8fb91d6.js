@@ -1,4 +1,4 @@
-import { _ as _export_sfc, r as ref, c as computed, o as onMounted, a as openBlock, b as createElementBlock, d as createBaseVNode, n as normalizeStyle, e as createVNode, w as withCtx, t as toDisplayString, f as createCommentVNode, F as Fragment, g as renderList, h as createTextVNode, T as Transition, i as withKeys, s as stores, j as storeToRefs, k as watch } from './index.ffe0d762.js';
+import { _ as _export_sfc, r as ref, c as computed, o as onMounted, a as openBlock, b as createElementBlock, d as createBaseVNode, n as normalizeStyle, e as createVNode, w as withCtx, t as toDisplayString, f as createCommentVNode, F as Fragment, g as renderList, h as createTextVNode, T as Transition, i as withKeys, s as stores, j as storeToRefs, k as watch } from './index.aa029e6a.js';
 
 const WhiteLabel_vue_vue_type_style_index_0_scoped_e2d90a19_lang = '';
 
@@ -225,14 +225,38 @@ const currentIndex = ref(0);
 const currentSlide = computed(() => slides[currentIndex.value]);
 const progress = computed(() => ((currentIndex.value + 1) / slides.length) * 100);
 
-const next = () => { if (currentIndex.value < slides.length - 1) currentIndex.value++; };
-const prev = () => { if (currentIndex.value > 0) currentIndex.value--; };
+
+const scrollToTop = () => {
+    document.querySelector('.bilbo-presentation').scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};
+
+const next = () => { 
+    if (currentIndex.value < slides.length - 1) {
+        currentIndex.value++;
+        scrollToTop();
+    }
+};
+
+const prev = () => { 
+    if (currentIndex.value > 0) {
+        currentIndex.value--;
+        scrollToTop();
+    }
+};
 
 onMounted(() => {
-window.addEventListener('keydown', (e) => {
-if (e.key === 'ArrowRight') next();
-if(e.key === 'ArrowLeft') prev();
-});
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+            next();
+        }
+
+        if(e.key === 'ArrowLeft') {
+            prev();
+        }
+    });
 });
 
 return (_ctx, _cache) => {
