@@ -1,4 +1,4 @@
-import { _ as _export_sfc, r as ref, u as useI18n, a as reactive, c as code, i as isMobile, o as onMounted, p as placeOptionList, b as onBeforeUnmount, d as resolveDirective, e as openBlock, f as createBlock, g as createBaseVNode, n as normalizeClass, w as withModifiers, h as withDirectives, j as createElementBlock, k as renderSlot, l as normalizeStyle, T as Teleport, m as computed, q as watch, s as resolveComponent, t as toDisplayString, v as createCommentVNode, x as withCtx, F as Fragment, y as renderList, z as unref, A as createVNode, B as vShow, I as IconButton, C as stores, D as createTextVNode, E as Transition, G as withKeys, H as storeToRefs } from './index.bf773e4b.js';
+import { _ as _export_sfc, r as ref, u as useI18n, a as reactive, c as code, i as isMobile, o as onMounted, p as placeOptionList, b as onBeforeUnmount, d as resolveDirective, e as openBlock, f as createBlock, g as createBaseVNode, n as normalizeClass, w as withModifiers, h as withDirectives, j as createElementBlock, k as renderSlot, l as normalizeStyle, T as Teleport, m as computed, q as watch, s as resolveComponent, t as toDisplayString, v as createCommentVNode, x as withCtx, F as Fragment, y as renderList, z as unref, A as createVNode, B as vShow, I as IconButton, C as stores, D as withKeys, E as createTextVNode, G as Transition, H as storeToRefs } from './index.18773c00.js';
 
 const _sfc_main$4 = {
   __name: 'ModalBox',
@@ -522,112 +522,115 @@ const _sfc_main$2 = {
 
 return (_ctx, _cache) => {
   return (openBlock(), createElementBlock(Fragment, null, [
-    createBaseVNode("div", {
-      class: "bilbo-presentation",
-      onKeyup: [
-        withKeys(next, ["right"]),
-        withKeys(prev, ["left"])
-      ],
-      tabindex: "0"
-    }, [
-      createBaseVNode("div", _hoisted_1, [
-        createBaseVNode("div", {
-          class: "progress-fill",
-          style: normalizeStyle({ width: progress.value + '%' })
-        }, null, 4 /* STYLE */)
-      ]),
-      createVNode(Transition, {
-        name: "slide-fade",
-        mode: "out-in"
-      }, {
-        default: withCtx(() => [
-          (openBlock(), createElementBlock("div", {
-            key: currentSlide.value.id,
-            class: "slide-content"
-          }, [
-            createBaseVNode("div", _hoisted_2, [
-              createBaseVNode("div", _hoisted_3, [
-                createBaseVNode("span", _hoisted_4, toDisplayString(currentSlide.value.id < 10 ? '0' + currentSlide.value.id : currentSlide.value.id), 1 /* TEXT */),
-                (currentSlide.value.id === 1)
-                  ? (openBlock(), createElementBlock("h1", _hoisted_5, toDisplayString(unref(t)('pages.home.title')), 1 /* TEXT */))
-                  : createCommentVNode("v-if", true),
-                createBaseVNode("h2", _hoisted_6, toDisplayString(currentSlide.value.title), 1 /* TEXT */),
-                createBaseVNode("p", _hoisted_7, toDisplayString(currentSlide.value.description), 1 /* TEXT */)
-              ]),
-              createCommentVNode(" Основной список (Items) "),
-              createBaseVNode("div", _hoisted_8, [
-                createBaseVNode("div", _hoisted_9, [
-                  createBaseVNode("ul", _hoisted_10, [
-                    (openBlock(true), createElementBlock(Fragment, null, renderList(currentSlide.value.items, (item, index) => {
-                      return (openBlock(), createElementBlock("li", {
-                        key: index,
-                        class: "item"
-                      }, [
-                        _cache[0] || (_cache[0] = createBaseVNode("span", { class: "bullet" }, null, -1 /* HOISTED */)),
-                        createTextVNode(" " + toDisplayString(item), 1 /* TEXT */)
-                      ]))
-                    }), 128 /* KEYED_FRAGMENT */))
-                  ])
-                ]),
-                createCommentVNode(" Дополнительные блоки (Examples / Notes) "),
-                (currentSlide.value.examples || currentSlide.value.notes)
-                  ? (openBlock(), createElementBlock("div", _hoisted_11, [
-                      (currentSlide.value.examples)
-                        ? (openBlock(), createElementBlock("div", _hoisted_12, [
-                            createBaseVNode("h4", _hoisted_13, toDisplayString(unref(t)('pages.home.cases')), 1 /* TEXT */),
-                            (openBlock(true), createElementBlock(Fragment, null, renderList(currentSlide.value.examples, (ex, i) => {
-                              return (openBlock(), createElementBlock("div", {
-                                class: "example-card",
-                                key: i
-                              }, toDisplayString(ex), 1 /* TEXT */))
-                            }), 128 /* KEYED_FRAGMENT */))
+    (currentSlide.value)
+      ? (openBlock(), createElementBlock("div", {
+          key: 0,
+          class: "bilbo-presentation",
+          onKeyup: [
+            withKeys(next, ["right"]),
+            withKeys(prev, ["left"])
+          ],
+          tabindex: "0"
+        }, [
+          createBaseVNode("div", _hoisted_1, [
+            createBaseVNode("div", {
+              class: "progress-fill",
+              style: normalizeStyle({ width: progress.value + '%' })
+            }, null, 4 /* STYLE */)
+          ]),
+          createVNode(Transition, {
+            name: "slide-fade",
+            mode: "out-in"
+          }, {
+            default: withCtx(() => [
+              (openBlock(), createElementBlock("div", {
+                key: currentSlide.value.id,
+                class: "slide-content"
+              }, [
+                createBaseVNode("div", _hoisted_2, [
+                  createBaseVNode("div", _hoisted_3, [
+                    createBaseVNode("span", _hoisted_4, toDisplayString(currentSlide.value.id < 10 ? '0' + currentSlide.value.id : currentSlide.value.id), 1 /* TEXT */),
+                    (currentSlide.value.id === 1)
+                      ? (openBlock(), createElementBlock("h1", _hoisted_5, toDisplayString(unref(t)('pages.home.title')), 1 /* TEXT */))
+                      : createCommentVNode("v-if", true),
+                    createBaseVNode("h2", _hoisted_6, toDisplayString(currentSlide.value.title), 1 /* TEXT */),
+                    createBaseVNode("p", _hoisted_7, toDisplayString(currentSlide.value.description), 1 /* TEXT */)
+                  ]),
+                  createCommentVNode(" Основной список (Items) "),
+                  createBaseVNode("div", _hoisted_8, [
+                    createBaseVNode("div", _hoisted_9, [
+                      createBaseVNode("ul", _hoisted_10, [
+                        (openBlock(true), createElementBlock(Fragment, null, renderList(currentSlide.value.items, (item, index) => {
+                          return (openBlock(), createElementBlock("li", {
+                            key: index,
+                            class: "item"
+                          }, [
+                            _cache[0] || (_cache[0] = createBaseVNode("span", { class: "bullet" }, null, -1 /* HOISTED */)),
+                            createTextVNode(" " + toDisplayString(item), 1 /* TEXT */)
                           ]))
-                        : createCommentVNode("v-if", true),
-                      (currentSlide.value.notes)
-                        ? (openBlock(), createElementBlock("div", _hoisted_14, [
-                            createBaseVNode("h4", _hoisted_15, toDisplayString(unref(t)('pages.home.important')), 1 /* TEXT */),
-                            (openBlock(true), createElementBlock(Fragment, null, renderList(currentSlide.value.notes, (note, i) => {
-                              return (openBlock(), createElementBlock("div", {
-                                class: "note-item",
-                                key: i
-                              }, [
-                                _cache[1] || (_cache[1] = createBaseVNode("span", { class: "note-icon" }, "★", -1 /* HOISTED */)),
-                                createTextVNode(" " + toDisplayString(note), 1 /* TEXT */)
+                        }), 128 /* KEYED_FRAGMENT */))
+                      ])
+                    ]),
+                    createCommentVNode(" Дополнительные блоки (Examples / Notes) "),
+                    (currentSlide.value.examples || currentSlide.value.notes)
+                      ? (openBlock(), createElementBlock("div", _hoisted_11, [
+                          (currentSlide.value.examples)
+                            ? (openBlock(), createElementBlock("div", _hoisted_12, [
+                                createBaseVNode("h4", _hoisted_13, toDisplayString(unref(t)('pages.home.cases')), 1 /* TEXT */),
+                                (openBlock(true), createElementBlock(Fragment, null, renderList(currentSlide.value.examples, (ex, i) => {
+                                  return (openBlock(), createElementBlock("div", {
+                                    class: "example-card",
+                                    key: i
+                                  }, toDisplayString(ex), 1 /* TEXT */))
+                                }), 128 /* KEYED_FRAGMENT */))
                               ]))
-                            }), 128 /* KEYED_FRAGMENT */))
-                          ]))
-                        : createCommentVNode("v-if", true)
-                    ]))
-                  : createCommentVNode("v-if", true)
-              ])
-            ])
-          ]))
-        ]),
-        _: 1 /* STABLE */
-      }),
-      (currentSlide.value.help)
-        ? (openBlock(), createElementBlock("div", _hoisted_16, [
-            _cache[2] || (_cache[2] = createBaseVNode("div", { class: "help-trigger" }, "!", -1 /* HOISTED */)),
-            createBaseVNode("div", _hoisted_17, [
-              createBaseVNode("div", _hoisted_18, toDisplayString(unref(t)('pages.home.for-speaker')) + ":", 1 /* TEXT */),
-              createTextVNode(" " + toDisplayString(currentSlide.value.help), 1 /* TEXT */)
-            ])
-          ]))
-        : createCommentVNode("v-if", true),
-      createBaseVNode("div", _hoisted_19, [
-        createBaseVNode("button", {
-          onClick: prev,
-          disabled: currentIndex.value === 0,
-          class: "nav-btn"
-        }, "←", 8 /* PROPS */, _hoisted_20),
-        createBaseVNode("div", _hoisted_21, toDisplayString(currentIndex.value + 1) + " / " + toDisplayString(slides.value.length), 1 /* TEXT */),
-        createBaseVNode("button", {
-          onClick: next,
-          disabled: currentIndex.value === slides.value.length - 1,
-          class: "nav-btn highlight"
-        }, "→", 8 /* PROPS */, _hoisted_22)
-      ])
-    ], 32 /* NEED_HYDRATION */),
+                            : createCommentVNode("v-if", true),
+                          (currentSlide.value.notes)
+                            ? (openBlock(), createElementBlock("div", _hoisted_14, [
+                                createBaseVNode("h4", _hoisted_15, toDisplayString(unref(t)('pages.home.important')), 1 /* TEXT */),
+                                (openBlock(true), createElementBlock(Fragment, null, renderList(currentSlide.value.notes, (note, i) => {
+                                  return (openBlock(), createElementBlock("div", {
+                                    class: "note-item",
+                                    key: i
+                                  }, [
+                                    _cache[1] || (_cache[1] = createBaseVNode("span", { class: "note-icon" }, "★", -1 /* HOISTED */)),
+                                    createTextVNode(" " + toDisplayString(note), 1 /* TEXT */)
+                                  ]))
+                                }), 128 /* KEYED_FRAGMENT */))
+                              ]))
+                            : createCommentVNode("v-if", true)
+                        ]))
+                      : createCommentVNode("v-if", true)
+                  ])
+                ])
+              ]))
+            ]),
+            _: 1 /* STABLE */
+          }),
+          (currentSlide.value?.help)
+            ? (openBlock(), createElementBlock("div", _hoisted_16, [
+                _cache[2] || (_cache[2] = createBaseVNode("div", { class: "help-trigger" }, "!", -1 /* HOISTED */)),
+                createBaseVNode("div", _hoisted_17, [
+                  createBaseVNode("div", _hoisted_18, toDisplayString(unref(t)('pages.home.for-speaker')) + ":", 1 /* TEXT */),
+                  createTextVNode(" " + toDisplayString(currentSlide.value.help), 1 /* TEXT */)
+                ])
+              ]))
+            : createCommentVNode("v-if", true),
+          createBaseVNode("div", _hoisted_19, [
+            createBaseVNode("button", {
+              onClick: prev,
+              disabled: currentIndex.value === 0,
+              class: "nav-btn"
+            }, "←", 8 /* PROPS */, _hoisted_20),
+            createBaseVNode("div", _hoisted_21, toDisplayString(currentIndex.value + 1) + " / " + toDisplayString(slides.value.length), 1 /* TEXT */),
+            createBaseVNode("button", {
+              onClick: next,
+              disabled: currentIndex.value === slides.value.length - 1,
+              class: "nav-btn highlight"
+            }, "→", 8 /* PROPS */, _hoisted_22)
+          ])
+        ], 32 /* NEED_HYDRATION */))
+      : createCommentVNode("v-if", true),
     createVNode(Select, {
       class: "noerror inline icon-only lanquage-list",
       optionList: unref(locale).languages,
