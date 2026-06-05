@@ -9,6 +9,13 @@
     transform: translateY(0);
 }
 }
+.lanquage-list[data-v-e2d90a19] {
+  position: fixed;
+  top: 14px;
+  right: 70px;
+  z-index: 111;
+}
+
 /* Основной контейнер презентации */
 .bilbo-presentation[data-v-e2d90a19] {
   background-color: #0a0a0a;
@@ -345,4 +352,19 @@
     bottom: auto;
     right: 20px;
 }
+}
+.direction-rtl .speaker-help[data-v-e2d90a19] {
+  right: auto;
+  left: 20px;
+}
+.direction-rtl .speaker-help .help-popover[data-v-e2d90a19] {
+  right: auto;
+  left: 0;
+}
+.direction-rtl .lanquage-list[data-v-e2d90a19] {
+  right: auto;
+  left: 70px;
+}
+.direction-rtl .controls[data-v-e2d90a19] {
+  flex-direction: row-reverse;
 }
