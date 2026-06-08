@@ -11562,7 +11562,66 @@ const getModelAssigner = (vnode) => {
   const fn = vnode.props["onUpdate:modelValue"] || false;
   return isArray$9(fn) ? (value) => invokeArrayFns(fn, value) : fn;
 };
+function onCompositionStart(e) {
+  e.target.composing = true;
+}
+function onCompositionEnd(e) {
+  const target = e.target;
+  if (target.composing) {
+    target.composing = false;
+    target.dispatchEvent(new Event("input"));
+  }
+}
 const assignKey = Symbol("_assign");
+const vModelText = {
+  created(el, { modifiers: { lazy, trim, number } }, vnode) {
+    el[assignKey] = getModelAssigner(vnode);
+    const castToNumber = number || vnode.props && vnode.props.type === "number";
+    addEventListener(el, lazy ? "change" : "input", (e) => {
+      if (e.target.composing) return;
+      let domValue = el.value;
+      if (trim) {
+        domValue = domValue.trim();
+      }
+      if (castToNumber) {
+        domValue = looseToNumber(domValue);
+      }
+      el[assignKey](domValue);
+    });
+    if (trim) {
+      addEventListener(el, "change", () => {
+        el.value = el.value.trim();
+      });
+    }
+    if (!lazy) {
+      addEventListener(el, "compositionstart", onCompositionStart);
+      addEventListener(el, "compositionend", onCompositionEnd);
+      addEventListener(el, "change", onCompositionEnd);
+    }
+  },
+  // set value on mounted so it's after min/max for type="range"
+  mounted(el, { value }) {
+    el.value = value == null ? "" : value;
+  },
+  beforeUpdate(el, { value, oldValue, modifiers: { lazy, trim, number } }, vnode) {
+    el[assignKey] = getModelAssigner(vnode);
+    if (el.composing) return;
+    const elValue = (number || el.type === "number") && !/^0\d/.test(el.value) ? looseToNumber(el.value) : el.value;
+    const newValue = value == null ? "" : value;
+    if (elValue === newValue) {
+      return;
+    }
+    if (document.activeElement === el && el.type !== "range") {
+      if (lazy && value === oldValue) {
+        return;
+      }
+      if (trim && el.value.trim() === newValue) {
+        return;
+      }
+    }
+    el.value = newValue;
+  }
+};
 const vModelCheckbox = {
   // #4096 array checkboxes need to be deep traversed
   deep: true,
@@ -11616,6 +11675,71 @@ function setChecked(el, { value, oldValue }, vnode) {
   }
   if (el.checked !== checked) {
     el.checked = checked;
+  }
+}
+const vModelSelect = {
+  // <select multiple> value need to be deep traversed
+  deep: true,
+  created(el, { value, modifiers: { number } }, vnode) {
+    const isSetModel = isSet$2(value);
+    addEventListener(el, "change", () => {
+      const selectedVal = Array.prototype.filter.call(el.options, (o) => o.selected).map(
+        (o) => number ? looseToNumber(getValue(o)) : getValue(o)
+      );
+      el[assignKey](
+        el.multiple ? isSetModel ? new Set(selectedVal) : selectedVal : selectedVal[0]
+      );
+      el._assigning = true;
+      nextTick(() => {
+        el._assigning = false;
+      });
+    });
+    el[assignKey] = getModelAssigner(vnode);
+  },
+  // set value in mounted & updated because <select> relies on its children
+  // <option>s.
+  mounted(el, { value }) {
+    setSelected(el, value);
+  },
+  beforeUpdate(el, _binding, vnode) {
+    el[assignKey] = getModelAssigner(vnode);
+  },
+  updated(el, { value }) {
+    if (!el._assigning) {
+      setSelected(el, value);
+    }
+  }
+};
+function setSelected(el, value) {
+  const isMultiple = el.multiple;
+  const isArrayValue = isArray$9(value);
+  if (isMultiple && !isArrayValue && !isSet$2(value)) {
+    warn$4(
+      `<select multiple v-model> expects an Array or Set value for its binding, but got ${Object.prototype.toString.call(value).slice(8, -1)}.`
+    );
+    return;
+  }
+  for (let i = 0, l = el.options.length; i < l; i++) {
+    const option = el.options[i];
+    const optionValue = getValue(option);
+    if (isMultiple) {
+      if (isArrayValue) {
+        const optionType = typeof optionValue;
+        if (optionType === "string" || optionType === "number") {
+          option.selected = value.some((v) => String(v) === String(optionValue));
+        } else {
+          option.selected = looseIndexOf(value, optionValue) > -1;
+        }
+      } else {
+        option.selected = value.has(optionValue);
+      }
+    } else if (looseEqual(getValue(option), value)) {
+      if (el.selectedIndex !== i) el.selectedIndex = i;
+      return;
+    }
+  }
+  if (!isMultiple && el.selectedIndex !== -1) {
+    el.selectedIndex = -1;
   }
 }
 function getValue(el) {
@@ -46252,7 +46376,7 @@ const routes = [
     {
         path: '/',
         name: 'home',
-        component: () => __vitePreload(() => import('./Home.2a91cf1c.js'),true?["assets/Home.2a91cf1c.js","assets/Home.ce108329.css"]:void 0),
+        component: () => __vitePreload(() => import('./Home.5bef55c5.js'),true?["assets/Home.5bef55c5.js","assets/Home.6dddf6e0.css"]:void 0),
         abort: []
     },
     // {
@@ -46270,7 +46394,7 @@ const routes = [
     {
         path: '/error',
         name: 'error',
-        component: () => __vitePreload(() => import('./Error.00459ad2.js'),true?["assets/Error.00459ad2.js","assets/Error.b7bdf131.css"]:void 0),
+        component: () => __vitePreload(() => import('./Error.b6a95e1e.js'),true?["assets/Error.b6a95e1e.js","assets/Error.b7bdf131.css"]:void 0),
         abort: []
     },
     {
@@ -54732,7 +54856,7 @@ const browserExt = {
   },
   test: () => true,
   load: async () => {
-    await __vitePreload(() => import('./browserAll.e69f22db.js'),true?["assets/browserAll.e69f22db.js","assets/init.3e09d124.js","assets/colorToUniform.08ac551a.js"]:void 0);
+    await __vitePreload(() => import('./browserAll.731b3c86.js'),true?["assets/browserAll.731b3c86.js","assets/init.c5d973c5.js","assets/colorToUniform.08ac551a.js"]:void 0);
   }
 };
 
@@ -54744,7 +54868,7 @@ const webworkerExt = {
   },
   test: () => typeof self !== "undefined" && self.WorkerGlobalScope !== void 0,
   load: async () => {
-    await __vitePreload(() => import('./webworkerAll.a5576b39.js'),true?["assets/webworkerAll.a5576b39.js","assets/init.3e09d124.js","assets/colorToUniform.08ac551a.js"]:void 0);
+    await __vitePreload(() => import('./webworkerAll.c3de132e.js'),true?["assets/webworkerAll.c3de132e.js","assets/init.c5d973c5.js","assets/colorToUniform.08ac551a.js"]:void 0);
   }
 };
 
@@ -65204,14 +65328,14 @@ async function autoDetectRenderer(options) {
   for (let i = 0; i < preferredOrder.length; i++) {
     const rendererType = preferredOrder[i];
     if (rendererType === "webgpu" && await isWebGPUSupported()) {
-      const { WebGPURenderer } = await __vitePreload(() => import('./WebGPURenderer.9c36d61e.js'),true?["assets/WebGPURenderer.9c36d61e.js","assets/colorToUniform.08ac551a.js","assets/SharedSystems.99862a9e.js"]:void 0);
+      const { WebGPURenderer } = await __vitePreload(() => import('./WebGPURenderer.cf8cbe9c.js'),true?["assets/WebGPURenderer.cf8cbe9c.js","assets/colorToUniform.08ac551a.js","assets/SharedSystems.dbe33856.js"]:void 0);
       RendererClass = WebGPURenderer;
       finalOptions = { ...options, ...options.webgpu };
       break;
     } else if (rendererType === "webgl" && isWebGLSupported(
       options.failIfMajorPerformanceCaveat ?? AbstractRenderer.defaultOptions.failIfMajorPerformanceCaveat
     )) {
-      const { WebGLRenderer } = await __vitePreload(() => import('./WebGLRenderer.8b1df14f.js'),true?["assets/WebGLRenderer.8b1df14f.js","assets/colorToUniform.08ac551a.js","assets/SharedSystems.99862a9e.js"]:void 0);
+      const { WebGLRenderer } = await __vitePreload(() => import('./WebGLRenderer.0dfc7079.js'),true?["assets/WebGLRenderer.0dfc7079.js","assets/colorToUniform.08ac551a.js","assets/SharedSystems.dbe33856.js"]:void 0);
       RendererClass = WebGLRenderer;
       finalOptions = { ...options, ...options.webgl };
       break;
@@ -76112,4 +76236,4 @@ app.config.globalProperties.$message = message;
 
 app.mount('#bilbo-presentations-app');
 
-export { Matrix as $, createVNode as A, vShow as B, stores$1 as C, withKeys as D, createTextVNode as E, Fragment as F, Transition as G, storeToRefs as H, IconButton as I, ExtensionType as J, removeItems as K, Ticker as L, EventEmitter as M, warn as N, extensions as O, Point as P, Container as Q, Geometry as R, UniformGroup as S, Teleport as T, UPDATE_PRIORITY as U, BindGroup as V, TexturePool as W, Texture as X, RendererType as Y, Bounds as Z, _export_sfc as _, reactive as a, ViewContainer as a0, GraphicsContext as a1, deprecation as a2, v8_0_0 as a3, Buffer as a4, BufferUsage as a5, Color as a6, TextStyle as a7, generateTextStyleKey as a8, BigPool as a9, fontStringFromTextStyle as aA, getCanvasFillStyle as aB, nextPow2 as aC, GraphicsContextSystem as aD, getTextureBatchBindGroup as aE, fastCopy as aF, STENCIL_MODES as aG, createIdFromString as aH, CLEAR as aI, CanvasSource as aJ, TextureSource as aK, AbstractRenderer as aL, TextureMatrix as aM, DefaultBatcher as aN, getGlobalBounds as aO, FilterEffect as aP, Sprite as aQ, unsafeEvalSupported as aR, uid as aS, SystemRunner as aT, multiplyColors as aU, UPDATE_COLOR as aV, UPDATE_BLEND as aW, UPDATE_VISIBLE as aX, getLocalBounds as aY, VERSION as aZ, RendererInitHook as a_, BatchableGraphics as aa, getAdjustedBlendModeBlend as ab, getAttributeInfoFromFormat as ac, ViewableBuffer as ad, Shader as ae, GlProgram as af, GpuProgram as ag, TextureStyle as ah, compileHighShaderGpuProgram as ai, roundPixelsBit as aj, compileHighShaderGlProgram as ak, roundPixelsBitGl as al, getMaxTexturesPerBatch as am, colorBit as an, generateTextureBatchBit as ao, colorBitGl as ap, generateTextureBatchBitGl as aq, getBatchSamplersUniformGroup as ar, BitmapFontManager as as, getBitmapTextLayout as at, Cache as au, updateQuadBounds as av, DOMAdapter as aw, CanvasPool as ax, Rectangle as ay, CanvasTextMetrics as az, onBeforeUnmount as b, code$3 as c, resolveDirective as d, openBlock as e, createBlock as f, createBaseVNode as g, withDirectives as h, isMobile as i, createElementBlock as j, renderSlot as k, normalizeStyle as l, computed as m, normalizeClass as n, onMounted as o, placeOptionList as p, watch as q, ref$1 as r, resolveComponent as s, toDisplayString$1 as t, useI18n as u, createCommentVNode as v, withModifiers as w, withCtx as x, renderList as y, unref as z };
+export { Geometry as $, vShow as A, unref as B, stores$1 as C, withKeys as D, createTextVNode as E, Fragment as F, Transition as G, commonjsGlobal as H, IconButton as I, process as J, getDefaultExportFromCjs as K, vModelCheckbox as L, vModelText as M, vModelSelect as N, storeToRefs as O, baseUrl as P, Point as Q, ExtensionType as R, removeItems as S, Teleport as T, Ticker as U, UPDATE_PRIORITY as V, EventEmitter as W, warn as X, extensions as Y, Container as Z, _export_sfc as _, reactive as a, multiplyColors as a$, UniformGroup as a0, BindGroup as a1, TexturePool as a2, Texture as a3, RendererType as a4, Bounds as a5, Matrix as a6, ViewContainer as a7, GraphicsContext as a8, deprecation as a9, getBitmapTextLayout as aA, Cache as aB, updateQuadBounds as aC, DOMAdapter as aD, CanvasPool as aE, Rectangle as aF, CanvasTextMetrics as aG, fontStringFromTextStyle as aH, getCanvasFillStyle as aI, nextPow2 as aJ, GraphicsContextSystem as aK, getTextureBatchBindGroup as aL, fastCopy as aM, STENCIL_MODES as aN, createIdFromString as aO, CLEAR as aP, CanvasSource as aQ, TextureSource as aR, AbstractRenderer as aS, TextureMatrix as aT, DefaultBatcher as aU, getGlobalBounds as aV, FilterEffect as aW, Sprite as aX, unsafeEvalSupported as aY, uid as aZ, SystemRunner as a_, v8_0_0 as aa, Buffer as ab, BufferUsage as ac, Color as ad, TextStyle as ae, generateTextStyleKey as af, BigPool as ag, BatchableGraphics as ah, getAdjustedBlendModeBlend as ai, getAttributeInfoFromFormat as aj, ViewableBuffer as ak, Shader as al, GlProgram as am, GpuProgram as an, TextureStyle as ao, compileHighShaderGpuProgram as ap, roundPixelsBit as aq, compileHighShaderGlProgram as ar, roundPixelsBitGl as as, getMaxTexturesPerBatch as at, colorBit as au, generateTextureBatchBit as av, colorBitGl as aw, generateTextureBatchBitGl as ax, getBatchSamplersUniformGroup as ay, BitmapFontManager as az, onBeforeUnmount as b, UPDATE_COLOR as b0, UPDATE_BLEND as b1, UPDATE_VISIBLE as b2, getLocalBounds as b3, VERSION as b4, RendererInitHook as b5, code$3 as c, resolveDirective as d, openBlock as e, createBlock as f, createBaseVNode as g, withDirectives as h, isMobile as i, createElementBlock as j, renderSlot as k, normalizeStyle as l, computed as m, normalizeClass as n, onMounted as o, placeOptionList as p, watch as q, ref$1 as r, resolveComponent as s, toDisplayString$1 as t, useI18n as u, createCommentVNode as v, withModifiers as w, withCtx as x, createVNode as y, renderList as z };
