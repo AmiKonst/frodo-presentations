@@ -1,6 +1,6 @@
-import { _ as _export_sfc, r as ref, u as useI18n, a as reactive, c as code, i as isMobile, o as onMounted, p as placeOptionList, b as onBeforeUnmount, d as resolveDirective, e as openBlock, f as createBlock, g as createBaseVNode, n as normalizeClass, w as withModifiers, h as withDirectives, j as createElementBlock, k as renderSlot, l as normalizeStyle, T as Teleport, m as computed, q as watch, s as resolveComponent, t as toDisplayString, v as createCommentVNode, x as withCtx, I as IconButton, y as createVNode, F as Fragment, z as renderList, A as vShow, B as unref, C as stores, D as withKeys, E as createTextVNode, G as Transition, H as commonjsGlobal, J as process, K as getDefaultExportFromCjs, L as vModelCheckbox, M as vModelText, N as vModelSelect, O as storeToRefs, P as baseUrl } from './index.f237b4b3.js';
+import { _ as _export_sfc, r as ref, u as useI18n, a as reactive, c as code, i as isMobile, o as onMounted, p as placeOptionList, b as onBeforeUnmount, d as resolveDirective, e as openBlock, f as createBlock, g as createBaseVNode, n as normalizeClass, w as withModifiers, h as withDirectives, j as createElementBlock, k as renderSlot, l as normalizeStyle, T as Teleport, m as computed, q as watch, s as resolveComponent, t as toDisplayString, v as createCommentVNode, x as withCtx, I as IconButton, y as createVNode, F as Fragment, z as renderList, A as vShow, B as unref, C as stores, D as withKeys, E as createTextVNode, G as Transition, H as commonjsGlobal, J as process, K as getDefaultExportFromCjs, L as vModelCheckbox, M as vModelText, N as vModelSelect, O as storeToRefs, P as baseUrl } from './index.ed179882.js';
 
-const _sfc_main$5 = {
+const _sfc_main$6 = {
   __name: 'ModalBox',
   props: {
     field: { type: [Object, null], default: null },
@@ -202,16 +202,16 @@ return (_ctx, _cache) => {
 }
 
 };
-const ModalBox = /*#__PURE__*/_export_sfc(_sfc_main$5, [['__file',"D:/bilbo/presentations/shared/components/ui/ModalBox.vue"]]);
+const ModalBox = /*#__PURE__*/_export_sfc(_sfc_main$6, [['__file',"D:/bilbo/presentations/shared/components/ui/ModalBox.vue"]]);
 
-const _hoisted_1$3 = ["disabled", "placeholder", "value"];
-const _hoisted_2$3 = ["title"];
-const _hoisted_3$3 = ["value", "onClick"];
-const _hoisted_4$3 = { class: "actions-block" };
-const _hoisted_5$3 = { class: "error" };
+const _hoisted_1$4 = ["disabled", "placeholder", "value"];
+const _hoisted_2$4 = ["title"];
+const _hoisted_3$4 = ["value", "onClick"];
+const _hoisted_4$4 = { class: "actions-block" };
+const _hoisted_5$4 = { class: "error" };
 
 
-const _sfc_main$4 = {
+const _sfc_main$5 = {
   __name: 'Select',
   props: {
     isError: { type: Boolean, default: false },
@@ -326,11 +326,11 @@ return (_ctx, _cache) => {
                     'without-placeholder': !props.placeholder,
                     clearable: props.clearable && data.selected && !props.disabled
                 })
-      }, null, 10 /* CLASS, PROPS */, _hoisted_1$3),
+      }, null, 10 /* CLASS, PROPS */, _hoisted_1$4),
       createBaseVNode("span", {
         class: "placeholder",
         title: props.placeholder
-      }, toDisplayString(props.placeholder), 9 /* TEXT, PROPS */, _hoisted_2$3),
+      }, toDisplayString(props.placeholder), 9 /* TEXT, PROPS */, _hoisted_2$4),
       (valueIcon.value || props.icon)
         ? (openBlock(), createBlock(_component_Icon, {
             key: 0,
@@ -372,14 +372,14 @@ return (_ctx, _cache) => {
                     }, null, 512 /* NEED_PATCH */), [
                       [vShow, data.selected === option.code]
                     ])
-                  ], 10 /* CLASS, PROPS */, _hoisted_3$3))
+                  ], 10 /* CLASS, PROPS */, _hoisted_3$4))
                 }), 128 /* KEYED_FRAGMENT */))
               ])
             ]),
             _: 3 /* FORWARDED */
           }, 8 /* PROPS */, ["field", "placeOptions"]))
         : createCommentVNode("v-if", true),
-      createBaseVNode("div", _hoisted_4$3, [
+      createBaseVNode("div", _hoisted_4$4, [
         (props.clearable && data.selected && !props.disabled)
           ? (openBlock(), createBlock(IconButton, {
               key: 0,
@@ -395,56 +395,56 @@ return (_ctx, _cache) => {
         })
       ])
     ]),
-    createBaseVNode("span", _hoisted_5$3, toDisplayString(props.error), 1 /* TEXT */)
+    createBaseVNode("span", _hoisted_5$4, toDisplayString(props.error), 1 /* TEXT */)
   ], 2 /* CLASS */))
 }
 }
 
 };
-const Select = /*#__PURE__*/_export_sfc(_sfc_main$4, [['__file',"D:/bilbo/presentations/shared/components/ui/Select.vue"]]);
+const Select = /*#__PURE__*/_export_sfc(_sfc_main$5, [['__file',"D:/bilbo/presentations/shared/components/ui/Select.vue"]]);
 
 const WhiteLabel_vue_vue_type_style_index_0_scoped_e2d90a19_lang = '';
 
-const _hoisted_1$2 = { class: "progress-bar" };
-const _hoisted_2$2 = { class: "slide-inner" };
-const _hoisted_3$2 = { class: "slide-header" };
-const _hoisted_4$2 = { class: "slide-number" };
-const _hoisted_5$2 = {
+const _hoisted_1$3 = { class: "progress-bar" };
+const _hoisted_2$3 = { class: "slide-inner" };
+const _hoisted_3$3 = { class: "slide-header" };
+const _hoisted_4$3 = { class: "slide-number" };
+const _hoisted_5$3 = {
   key: 0,
   class: "main-title"
 };
-const _hoisted_6$2 = { class: "slide-title" };
-const _hoisted_7$2 = { class: "slide-description" };
-const _hoisted_8$1 = { class: "content-grid" };
-const _hoisted_9$1 = { class: "items-section" };
-const _hoisted_10$1 = { class: "items-list" };
-const _hoisted_11$1 = {
+const _hoisted_6$3 = { class: "slide-title" };
+const _hoisted_7$3 = { class: "slide-description" };
+const _hoisted_8$2 = { class: "content-grid" };
+const _hoisted_9$2 = { class: "items-section" };
+const _hoisted_10$2 = { class: "items-list" };
+const _hoisted_11$2 = {
   key: 0,
   class: "extra-section"
 };
-const _hoisted_12$1 = {
+const _hoisted_12$2 = {
   key: 0,
   class: "examples-block"
 };
-const _hoisted_13$1 = { class: "extra-label" };
-const _hoisted_14$1 = {
+const _hoisted_13$2 = { class: "extra-label" };
+const _hoisted_14$2 = {
   key: 1,
   class: "notes-block"
 };
-const _hoisted_15$1 = { class: "extra-label" };
-const _hoisted_16$1 = {
+const _hoisted_15$2 = { class: "extra-label" };
+const _hoisted_16$2 = {
   key: 0,
   class: "speaker-help"
 };
-const _hoisted_17$1 = { class: "help-popover" };
-const _hoisted_18$1 = { class: "help-label" };
-const _hoisted_19$1 = { class: "controls" };
-const _hoisted_20$1 = ["disabled"];
-const _hoisted_21$1 = { class: "slide-counter" };
-const _hoisted_22$1 = ["disabled"];
+const _hoisted_17$2 = { class: "help-popover" };
+const _hoisted_18$2 = { class: "help-label" };
+const _hoisted_19$2 = { class: "controls" };
+const _hoisted_20$2 = ["disabled"];
+const _hoisted_21$2 = { class: "slide-counter" };
+const _hoisted_22$2 = ["disabled"];
 
     
-const _sfc_main$3 = {
+const _sfc_main$4 = {
   __name: 'WhiteLabel',
   setup(__props) {
 
@@ -532,7 +532,7 @@ return (_ctx, _cache) => {
           ],
           tabindex: "0"
         }, [
-          createBaseVNode("div", _hoisted_1$2, [
+          createBaseVNode("div", _hoisted_1$3, [
             createBaseVNode("div", {
               class: "progress-fill",
               style: normalizeStyle({ width: progress.value + '%' })
@@ -547,19 +547,19 @@ return (_ctx, _cache) => {
                 key: currentSlide.value.id,
                 class: "slide-content"
               }, [
-                createBaseVNode("div", _hoisted_2$2, [
-                  createBaseVNode("div", _hoisted_3$2, [
-                    createBaseVNode("span", _hoisted_4$2, toDisplayString(currentSlide.value.id < 10 ? '0' + currentSlide.value.id : currentSlide.value.id), 1 /* TEXT */),
+                createBaseVNode("div", _hoisted_2$3, [
+                  createBaseVNode("div", _hoisted_3$3, [
+                    createBaseVNode("span", _hoisted_4$3, toDisplayString(currentSlide.value.id < 10 ? '0' + currentSlide.value.id : currentSlide.value.id), 1 /* TEXT */),
                     (currentSlide.value.id === 1)
-                      ? (openBlock(), createElementBlock("h1", _hoisted_5$2, toDisplayString(unref(t)('pages.home.title')), 1 /* TEXT */))
+                      ? (openBlock(), createElementBlock("h1", _hoisted_5$3, toDisplayString(unref(t)('pages.home.title')), 1 /* TEXT */))
                       : createCommentVNode("v-if", true),
-                    createBaseVNode("h2", _hoisted_6$2, toDisplayString(currentSlide.value.title), 1 /* TEXT */),
-                    createBaseVNode("p", _hoisted_7$2, toDisplayString(currentSlide.value.description), 1 /* TEXT */)
+                    createBaseVNode("h2", _hoisted_6$3, toDisplayString(currentSlide.value.title), 1 /* TEXT */),
+                    createBaseVNode("p", _hoisted_7$3, toDisplayString(currentSlide.value.description), 1 /* TEXT */)
                   ]),
                   createCommentVNode(" Основной список (Items) "),
-                  createBaseVNode("div", _hoisted_8$1, [
-                    createBaseVNode("div", _hoisted_9$1, [
-                      createBaseVNode("ul", _hoisted_10$1, [
+                  createBaseVNode("div", _hoisted_8$2, [
+                    createBaseVNode("div", _hoisted_9$2, [
+                      createBaseVNode("ul", _hoisted_10$2, [
                         (openBlock(true), createElementBlock(Fragment, null, renderList(currentSlide.value.items, (item, index) => {
                           return (openBlock(), createElementBlock("li", {
                             key: index,
@@ -573,10 +573,10 @@ return (_ctx, _cache) => {
                     ]),
                     createCommentVNode(" Дополнительные блоки (Examples / Notes) "),
                     (currentSlide.value.examples || currentSlide.value.notes)
-                      ? (openBlock(), createElementBlock("div", _hoisted_11$1, [
+                      ? (openBlock(), createElementBlock("div", _hoisted_11$2, [
                           (currentSlide.value.examples)
-                            ? (openBlock(), createElementBlock("div", _hoisted_12$1, [
-                                createBaseVNode("h4", _hoisted_13$1, toDisplayString(unref(t)('pages.home.cases')), 1 /* TEXT */),
+                            ? (openBlock(), createElementBlock("div", _hoisted_12$2, [
+                                createBaseVNode("h4", _hoisted_13$2, toDisplayString(unref(t)('pages.home.cases')), 1 /* TEXT */),
                                 (openBlock(true), createElementBlock(Fragment, null, renderList(currentSlide.value.examples, (ex, i) => {
                                   return (openBlock(), createElementBlock("div", {
                                     class: "example-card",
@@ -586,8 +586,8 @@ return (_ctx, _cache) => {
                               ]))
                             : createCommentVNode("v-if", true),
                           (currentSlide.value.notes)
-                            ? (openBlock(), createElementBlock("div", _hoisted_14$1, [
-                                createBaseVNode("h4", _hoisted_15$1, toDisplayString(unref(t)('pages.home.important')), 1 /* TEXT */),
+                            ? (openBlock(), createElementBlock("div", _hoisted_14$2, [
+                                createBaseVNode("h4", _hoisted_15$2, toDisplayString(unref(t)('pages.home.important')), 1 /* TEXT */),
                                 (openBlock(true), createElementBlock(Fragment, null, renderList(currentSlide.value.notes, (note, i) => {
                                   return (openBlock(), createElementBlock("div", {
                                     class: "note-item",
@@ -608,26 +608,26 @@ return (_ctx, _cache) => {
             _: 1 /* STABLE */
           }),
           (currentSlide.value?.help)
-            ? (openBlock(), createElementBlock("div", _hoisted_16$1, [
+            ? (openBlock(), createElementBlock("div", _hoisted_16$2, [
                 _cache[2] || (_cache[2] = createBaseVNode("div", { class: "help-trigger" }, "!", -1 /* HOISTED */)),
-                createBaseVNode("div", _hoisted_17$1, [
-                  createBaseVNode("div", _hoisted_18$1, toDisplayString(unref(t)('pages.home.for-speaker')) + ":", 1 /* TEXT */),
+                createBaseVNode("div", _hoisted_17$2, [
+                  createBaseVNode("div", _hoisted_18$2, toDisplayString(unref(t)('pages.home.for-speaker')) + ":", 1 /* TEXT */),
                   createTextVNode(" " + toDisplayString(currentSlide.value.help), 1 /* TEXT */)
                 ])
               ]))
             : createCommentVNode("v-if", true),
-          createBaseVNode("div", _hoisted_19$1, [
+          createBaseVNode("div", _hoisted_19$2, [
             createBaseVNode("button", {
               onClick: prev,
               disabled: currentIndex.value === 0,
               class: "nav-btn"
-            }, "←", 8 /* PROPS */, _hoisted_20$1),
-            createBaseVNode("div", _hoisted_21$1, toDisplayString(currentIndex.value + 1) + " / " + toDisplayString(slides.value.length), 1 /* TEXT */),
+            }, "←", 8 /* PROPS */, _hoisted_20$2),
+            createBaseVNode("div", _hoisted_21$2, toDisplayString(currentIndex.value + 1) + " / " + toDisplayString(slides.value.length), 1 /* TEXT */),
             createBaseVNode("button", {
               onClick: next,
               disabled: currentIndex.value === slides.value.length - 1,
               class: "nav-btn highlight"
-            }, "→", 8 /* PROPS */, _hoisted_22$1)
+            }, "→", 8 /* PROPS */, _hoisted_22$2)
           ])
         ], 32 /* NEED_HYDRATION */))
       : createCommentVNode("v-if", true),
@@ -645,7 +645,7 @@ return (_ctx, _cache) => {
 }
 
 };
-const WhiteLabel = /*#__PURE__*/_export_sfc(_sfc_main$3, [['__scopeId',"data-v-e2d90a19"],['__file',"D:/bilbo/presentations/src/pages/Home/components/WhiteLabel.vue"]]);
+const WhiteLabel = /*#__PURE__*/_export_sfc(_sfc_main$4, [['__scopeId',"data-v-e2d90a19"],['__file',"D:/bilbo/presentations/src/pages/Home/components/WhiteLabel.vue"]]);
 
 var html2pdf$1 = {exports: {}};
 
@@ -40539,82 +40539,82 @@ const html2pdf = /*@__PURE__*/getDefaultExportFromCjs(html2pdf$1.exports);
 
 const Calc_vue_vue_type_style_index_0_scoped_1f0d6e61_lang = '';
 
-const _hoisted_1$1 = { class: "calculator-layout" };
-const _hoisted_2$1 = { class: "header" };
-const _hoisted_3$1 = { class: "header-content" };
-const _hoisted_4$1 = { class: "font-h1" };
-const _hoisted_5$1 = {
+const _hoisted_1$2 = { class: "calculator-layout" };
+const _hoisted_2$2 = { class: "header" };
+const _hoisted_3$2 = { class: "header-content" };
+const _hoisted_4$2 = { class: "font-h1" };
+const _hoisted_5$2 = {
   class: "font-body-2",
   style: {"color":"var(--dark-80)"}
 };
-const _hoisted_6$1 = { class: "main-container" };
-const _hoisted_7$1 = { class: "sources-grid" };
-const _hoisted_8 = ["onClick"];
-const _hoisted_9 = { class: "title-group" };
-const _hoisted_10 = { class: "font-h5" };
-const _hoisted_11 = {
+const _hoisted_6$2 = { class: "main-container" };
+const _hoisted_7$2 = { class: "sources-grid" };
+const _hoisted_8$1 = ["onClick"];
+const _hoisted_9$1 = { class: "title-group" };
+const _hoisted_10$1 = { class: "font-h5" };
+const _hoisted_11$1 = {
   key: 0,
   class: "font-caption preview-text"
 };
-const _hoisted_12 = { class: "actions" };
-const _hoisted_13 = ["onClick"];
-const _hoisted_14 = { class: "card-body" };
-const _hoisted_15 = {
+const _hoisted_12$1 = { class: "actions" };
+const _hoisted_13$1 = ["onClick"];
+const _hoisted_14$1 = { class: "card-body" };
+const _hoisted_15$1 = {
   key: 0,
   class: "sliders-list"
 };
-const _hoisted_16 = {
+const _hoisted_16$1 = {
   key: 0,
   class: "toggler-wrapper"
 };
-const _hoisted_17 = { class: "toggler-label" };
-const _hoisted_18 = { class: "font-body-2" };
-const _hoisted_19 = { class: "switch" };
-const _hoisted_20 = ["onUpdate:modelValue"];
-const _hoisted_21 = { key: 1 };
-const _hoisted_22 = { class: "slider-header" };
-const _hoisted_23 = { class: "font-body-2" };
-const _hoisted_24 = { class: "font-body-2 value-preview" };
-const _hoisted_25 = ["onUpdate:modelValue", "min", "max", "step"];
-const _hoisted_26 = { class: "card-footer" };
-const _hoisted_27 = { class: "result-label font-caption" };
-const _hoisted_28 = { class: "font-h5 result-value" };
-const _hoisted_29 = { class: "sticky-results" };
-const _hoisted_30 = { class: "total-header" };
-const _hoisted_31 = { class: "font-h4" };
-const _hoisted_32 = { class: "total-amount font-h2 text-gradient" };
-const _hoisted_33 = { class: "settings-group" };
-const _hoisted_34 = { class: "input-field" };
-const _hoisted_35 = { class: "font-caption" };
-const _hoisted_36 = ["value"];
-const _hoisted_37 = ["value"];
-const _hoisted_38 = { class: "input-field" };
-const _hoisted_39 = { class: "font-caption" };
-const _hoisted_40 = { class: "modal-content" };
-const _hoisted_41 = { class: "modal-header" };
-const _hoisted_42 = { class: "font-h4" };
-const _hoisted_43 = { class: "modal-body" };
-const _hoisted_44 = { class: "info-section" };
-const _hoisted_45 = { class: "font-caption" };
-const _hoisted_46 = { class: "formula-container" };
-const _hoisted_47 = { class: "formula-code" };
-const _hoisted_48 = { class: "font-body-1" };
-const _hoisted_49 = {
+const _hoisted_17$1 = { class: "toggler-label" };
+const _hoisted_18$1 = { class: "font-body-2" };
+const _hoisted_19$1 = { class: "switch" };
+const _hoisted_20$1 = ["onUpdate:modelValue"];
+const _hoisted_21$1 = { key: 1 };
+const _hoisted_22$1 = { class: "slider-header" };
+const _hoisted_23$1 = { class: "font-body-2" };
+const _hoisted_24$1 = { class: "font-body-2 value-preview" };
+const _hoisted_25$1 = ["onUpdate:modelValue", "min", "max", "step"];
+const _hoisted_26$1 = { class: "card-footer" };
+const _hoisted_27$1 = { class: "result-label font-caption" };
+const _hoisted_28$1 = { class: "font-h5 result-value" };
+const _hoisted_29$1 = { class: "sticky-results" };
+const _hoisted_30$1 = { class: "total-header" };
+const _hoisted_31$1 = { class: "font-h4" };
+const _hoisted_32$1 = { class: "total-amount font-h2 text-gradient" };
+const _hoisted_33$1 = { class: "settings-group" };
+const _hoisted_34$1 = { class: "input-field" };
+const _hoisted_35$1 = { class: "font-caption" };
+const _hoisted_36$1 = ["value"];
+const _hoisted_37$1 = ["value"];
+const _hoisted_38$1 = { class: "input-field" };
+const _hoisted_39$1 = { class: "font-caption" };
+const _hoisted_40$1 = { class: "modal-content" };
+const _hoisted_41$1 = { class: "modal-header" };
+const _hoisted_42$1 = { class: "font-h4" };
+const _hoisted_43$1 = { class: "modal-body" };
+const _hoisted_44$1 = { class: "info-section" };
+const _hoisted_45$1 = { class: "font-caption" };
+const _hoisted_46$1 = { class: "formula-container" };
+const _hoisted_47$1 = { class: "formula-code" };
+const _hoisted_48$1 = { class: "font-body-1" };
+const _hoisted_49$1 = {
   key: 0,
   class: "info-section"
 };
-const _hoisted_50 = { class: "font-caption" };
-const _hoisted_51 = { class: "proof-title font-body-1" };
-const _hoisted_52 = { class: "font-body-2" };
-const _hoisted_53 = ["href"];
-const _hoisted_54 = { class: "mobile-sticky-bar mobile-only" };
-const _hoisted_55 = { class: "mobile-sticky-content" };
-const _hoisted_56 = { class: "summary" };
-const _hoisted_57 = { class: "font-caption" };
-const _hoisted_58 = { class: "font-h5 text-gradient" };
+const _hoisted_50$1 = { class: "font-caption" };
+const _hoisted_51$1 = { class: "proof-title font-body-1" };
+const _hoisted_52$1 = { class: "font-body-2" };
+const _hoisted_53$1 = ["href"];
+const _hoisted_54$1 = { class: "mobile-sticky-bar mobile-only" };
+const _hoisted_55$1 = { class: "mobile-sticky-content" };
+const _hoisted_56$1 = { class: "summary" };
+const _hoisted_57$1 = { class: "font-caption" };
+const _hoisted_58$1 = { class: "font-h5 text-gradient" };
 
     
-const _sfc_main$2 = {
+const _sfc_main$3 = {
   __name: 'Calc',
   setup(__props) {
 
@@ -42422,19 +42422,19 @@ const exportToPDF = () => {
 
 return (_ctx, _cache) => {
   return (openBlock(), createElementBlock(Fragment, null, [
-    createBaseVNode("div", _hoisted_1$1, [
-      createBaseVNode("header", _hoisted_2$1, [
-        createBaseVNode("div", _hoisted_3$1, [
-          createBaseVNode("h1", _hoisted_4$1, [
+    createBaseVNode("div", _hoisted_1$2, [
+      createBaseVNode("header", _hoisted_2$2, [
+        createBaseVNode("div", _hoisted_3$2, [
+          createBaseVNode("h1", _hoisted_4$2, [
             createTextVNode(toDisplayString(unref(t)('pages.calc.title-1')) + " ", 1 /* TEXT */),
             _cache[3] || (_cache[3] = createBaseVNode("span", { class: "text-gradient" }, "2026", -1 /* HOISTED */))
           ]),
-          createBaseVNode("p", _hoisted_5$1, toDisplayString(unref(t)('pages.calc.description')), 1 /* TEXT */)
+          createBaseVNode("p", _hoisted_5$2, toDisplayString(unref(t)('pages.calc.description')), 1 /* TEXT */)
         ])
       ]),
-      createBaseVNode("div", _hoisted_6$1, [
+      createBaseVNode("div", _hoisted_6$2, [
         createCommentVNode(" Сетка площадок "),
-        createBaseVNode("section", _hoisted_7$1, [
+        createBaseVNode("section", _hoisted_7$2, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(sources.value, (source) => {
             return (openBlock(), createElementBlock("div", {
               key: source.source,
@@ -42448,14 +42448,14 @@ return (_ctx, _cache) => {
                 class: "card-header",
                 onClick: $event => (toggleCollapse(source.source))
               }, [
-                createBaseVNode("div", _hoisted_9, [
-                  createBaseVNode("h3", _hoisted_10, toDisplayString(source.source), 1 /* TEXT */),
+                createBaseVNode("div", _hoisted_9$1, [
+                  createBaseVNode("h3", _hoisted_10$1, toDisplayString(source.source), 1 /* TEXT */),
                   createCommentVNode(" Превью данных в свернутом виде "),
                   (collapsed[source.source])
-                    ? (openBlock(), createElementBlock("div", _hoisted_11, toDisplayString(getPreviewText(source)), 1 /* TEXT */))
+                    ? (openBlock(), createElementBlock("div", _hoisted_11$1, toDisplayString(getPreviewText(source)), 1 /* TEXT */))
                     : createCommentVNode("v-if", true)
                 ]),
-                createBaseVNode("div", _hoisted_12, [
+                createBaseVNode("div", _hoisted_12$1, [
                   createBaseVNode("button", {
                     onClick: withModifiers($event => (openInfo(source)), ["stop"]),
                     class: "info-btn"
@@ -42486,7 +42486,7 @@ return (_ctx, _cache) => {
                         y2: "8"
                       })
                     ], -1 /* HOISTED */)
-                  ]))], 8 /* PROPS */, _hoisted_13),
+                  ]))], 8 /* PROPS */, _hoisted_13$1),
                   createBaseVNode("span", {
                     class: normalizeClass(["chevron", {
                                     'chevron--open':
@@ -42494,22 +42494,22 @@ return (_ctx, _cache) => {
                                 }])
                   }, " ▼ ", 2 /* CLASS */)
                 ])
-              ], 8 /* PROPS */, _hoisted_8),
+              ], 8 /* PROPS */, _hoisted_8$1),
               createCommentVNode(" Тело карточки (скрывается) "),
-              withDirectives(createBaseVNode("div", _hoisted_14, [
+              withDirectives(createBaseVNode("div", _hoisted_14$1, [
                 (source.ui_elements?.sliders)
-                  ? (openBlock(), createElementBlock("div", _hoisted_15, [
+                  ? (openBlock(), createElementBlock("div", _hoisted_15$1, [
                       (openBlock(true), createElementBlock(Fragment, null, renderList(source.ui_elements.sliders, (slider) => {
                         return (openBlock(), createElementBlock("div", {
                           key: slider.id,
                           class: "slider-item"
                         }, [
                           (slider.max === 1)
-                            ? (openBlock(), createElementBlock("div", _hoisted_16, [
+                            ? (openBlock(), createElementBlock("div", _hoisted_16$1, [
                                 createCommentVNode(" Оборачиваем всё в label и добавляем курсор-указатель "),
-                                createBaseVNode("label", _hoisted_17, [
-                                  createBaseVNode("span", _hoisted_18, toDisplayString(slider.label), 1 /* TEXT */),
-                                  createBaseVNode("div", _hoisted_19, [
+                                createBaseVNode("label", _hoisted_17$1, [
+                                  createBaseVNode("span", _hoisted_18$1, toDisplayString(slider.label), 1 /* TEXT */),
+                                  createBaseVNode("div", _hoisted_19$1, [
                                     withDirectives(createBaseVNode("input", {
                                       type: "checkbox",
                                       "onUpdate:modelValue": $event => ((
@@ -42520,7 +42520,7 @@ return (_ctx, _cache) => {
                                                 ) = $event),
                                       "true-value": 1,
                                       "false-value": 0
-                                    }, null, 8 /* PROPS */, _hoisted_20), [
+                                    }, null, 8 /* PROPS */, _hoisted_20$1), [
                                       [vModelCheckbox, 
                                                     state[
                                                         source.id ||
@@ -42532,10 +42532,10 @@ return (_ctx, _cache) => {
                                   ])
                                 ])
                               ]))
-                            : (openBlock(), createElementBlock("div", _hoisted_21, [
-                                createBaseVNode("div", _hoisted_22, [
-                                  createBaseVNode("span", _hoisted_23, toDisplayString(slider.label), 1 /* TEXT */),
-                                  createBaseVNode("span", _hoisted_24, toDisplayString(formatValue(
+                            : (openBlock(), createElementBlock("div", _hoisted_21$1, [
+                                createBaseVNode("div", _hoisted_22$1, [
+                                  createBaseVNode("span", _hoisted_23$1, toDisplayString(slider.label), 1 /* TEXT */),
+                                  createBaseVNode("span", _hoisted_24$1, toDisplayString(formatValue(
                                                     state[
                                                         source.id ||
                                                         source.source
@@ -42555,7 +42555,7 @@ return (_ctx, _cache) => {
                                   max: slider.max,
                                   step: slider.step,
                                   class: "custom-range"
-                                }, null, 8 /* PROPS */, _hoisted_25), [
+                                }, null, 8 /* PROPS */, _hoisted_25$1), [
                                   [
                                     vModelText,
                                     
@@ -42577,9 +42577,9 @@ return (_ctx, _cache) => {
                 [vShow, !collapsed[source.source]]
               ]),
               createCommentVNode(" Футер всегда виден или меняет стиль "),
-              createBaseVNode("div", _hoisted_26, [
-                createBaseVNode("div", _hoisted_27, toDisplayString(unref(t)('pages.calc.forecast')) + ": ", 1 /* TEXT */),
-                createBaseVNode("div", _hoisted_28, toDisplayString(formatCurrency(
+              createBaseVNode("div", _hoisted_26$1, [
+                createBaseVNode("div", _hoisted_27$1, toDisplayString(unref(t)('pages.calc.forecast')) + ": ", 1 /* TEXT */),
+                createBaseVNode("div", _hoisted_28$1, toDisplayString(formatCurrency(
                                     calculateSource(source),
                                     source.currency
                                 )), 1 /* TEXT */)
@@ -42588,14 +42588,14 @@ return (_ctx, _cache) => {
           }), 128 /* KEYED_FRAGMENT */))
         ]),
         createCommentVNode(" Правая панель (Sticky) "),
-        createBaseVNode("div", _hoisted_29, [
-          createBaseVNode("div", _hoisted_30, [
-            createBaseVNode("h2", _hoisted_31, toDisplayString(unref(t)('pages.calc.total')), 1 /* TEXT */),
-            createBaseVNode("div", _hoisted_32, toDisplayString(formatCurrency(totalNet.value, 'USD')), 1 /* TEXT */)
+        createBaseVNode("div", _hoisted_29$1, [
+          createBaseVNode("div", _hoisted_30$1, [
+            createBaseVNode("h2", _hoisted_31$1, toDisplayString(unref(t)('pages.calc.total')), 1 /* TEXT */),
+            createBaseVNode("div", _hoisted_32$1, toDisplayString(formatCurrency(totalNet.value, 'USD')), 1 /* TEXT */)
           ]),
-          createBaseVNode("div", _hoisted_33, [
-            createBaseVNode("div", _hoisted_34, [
-              createBaseVNode("label", _hoisted_35, toDisplayString(unref(t)('pages.calc.tax')), 1 /* TEXT */),
+          createBaseVNode("div", _hoisted_33$1, [
+            createBaseVNode("div", _hoisted_34$1, [
+              createBaseVNode("label", _hoisted_35$1, toDisplayString(unref(t)('pages.calc.tax')), 1 /* TEXT */),
               withDirectives(createBaseVNode("select", {
                 "onUpdate:modelValue": _cache[0] || (_cache[0] = $event => ((taxSettings.selectedRegionId) = $event)),
                 class: "custom-select font-body-2"
@@ -42604,7 +42604,7 @@ return (_ctx, _cache) => {
                   return createBaseVNode("option", {
                     key: reg.id,
                     value: reg.id
-                  }, toDisplayString(reg.name), 9 /* TEXT, PROPS */, _hoisted_36)
+                  }, toDisplayString(reg.name), 9 /* TEXT, PROPS */, _hoisted_36$1)
                 }), 64 /* STABLE_FRAGMENT */))
               ], 512 /* NEED_PATCH */), [
                 [vModelSelect, taxSettings.selectedRegionId]
@@ -42617,14 +42617,14 @@ return (_ctx, _cache) => {
                   return (openBlock(), createElementBlock("option", {
                     key: opt.label,
                     value: opt.rate
-                  }, toDisplayString(opt.label), 9 /* TEXT, PROPS */, _hoisted_37))
+                  }, toDisplayString(opt.label), 9 /* TEXT, PROPS */, _hoisted_37$1))
                 }), 128 /* KEYED_FRAGMENT */))
               ], 512 /* NEED_PATCH */), [
                 [vModelSelect, taxSettings.selectedRate]
               ])
             ]),
-            createBaseVNode("div", _hoisted_38, [
-              createBaseVNode("label", _hoisted_39, toDisplayString(unref(t)('pages.calc.distribution')) + " (" + toDisplayString((
+            createBaseVNode("div", _hoisted_38$1, [
+              createBaseVNode("label", _hoisted_39$1, toDisplayString(unref(t)('pages.calc.distribution')) + " (" + toDisplayString((
                                     taxSettings.distroCommission * 100
                                 ).toFixed(0)) + "%) ", 1 /* TEXT */),
               withDirectives(createBaseVNode("input", {
@@ -42663,42 +42663,42 @@ return (_ctx, _cache) => {
                 class: "modal-overlay",
                 onClick: withModifiers(closeInfo, ["self"])
               }, [
-                createBaseVNode("div", _hoisted_40, [
-                  createBaseVNode("div", _hoisted_41, [
-                    createBaseVNode("h2", _hoisted_42, toDisplayString(activeInfo.value.source), 1 /* TEXT */),
+                createBaseVNode("div", _hoisted_40$1, [
+                  createBaseVNode("div", _hoisted_41$1, [
+                    createBaseVNode("h2", _hoisted_42$1, toDisplayString(activeInfo.value.source), 1 /* TEXT */),
                     createBaseVNode("button", {
                       onClick: closeInfo,
                       class: "close-x"
                     }, " × ")
                   ]),
-                  createBaseVNode("div", _hoisted_43, [
-                    createBaseVNode("section", _hoisted_44, [
-                      createBaseVNode("h4", _hoisted_45, toDisplayString(unref(t)('pages.calc.modal.logic')), 1 /* TEXT */),
-                      createBaseVNode("div", _hoisted_46, [
-                        createBaseVNode("code", _hoisted_47, toDisplayString(activeInfo.value.calculation_logic
+                  createBaseVNode("div", _hoisted_43$1, [
+                    createBaseVNode("section", _hoisted_44$1, [
+                      createBaseVNode("h4", _hoisted_45$1, toDisplayString(unref(t)('pages.calc.modal.logic')), 1 /* TEXT */),
+                      createBaseVNode("div", _hoisted_46$1, [
+                        createBaseVNode("code", _hoisted_47$1, toDisplayString(activeInfo.value.calculation_logic
                                             .formula), 1 /* TEXT */)
                       ]),
-                      createBaseVNode("p", _hoisted_48, toDisplayString(activeInfo.value.calculation_logic
+                      createBaseVNode("p", _hoisted_48$1, toDisplayString(activeInfo.value.calculation_logic
                                         .description), 1 /* TEXT */)
                     ]),
                     (activeInfo.value.proofs)
-                      ? (openBlock(), createElementBlock("section", _hoisted_49, [
-                          createBaseVNode("h4", _hoisted_50, toDisplayString(unref(t)('pages.calc.modal.sources')), 1 /* TEXT */),
+                      ? (openBlock(), createElementBlock("section", _hoisted_49$1, [
+                          createBaseVNode("h4", _hoisted_50$1, toDisplayString(unref(t)('pages.calc.modal.sources')), 1 /* TEXT */),
                           (openBlock(true), createElementBlock(Fragment, null, renderList(activeInfo.value.proofs, (proof) => {
                             return (openBlock(), createElementBlock("div", {
                               key: proof.id,
                               class: "proof-item"
                             }, [
-                              createBaseVNode("div", _hoisted_51, [
+                              createBaseVNode("div", _hoisted_51$1, [
                                 createBaseVNode("b", null, toDisplayString(proof.title), 1 /* TEXT */),
                                 createTextVNode(" (" + toDisplayString(proof.year) + ") ", 1 /* TEXT */)
                               ]),
-                              createBaseVNode("p", _hoisted_52, toDisplayString(proof.description), 1 /* TEXT */),
+                              createBaseVNode("p", _hoisted_52$1, toDisplayString(proof.description), 1 /* TEXT */),
                               createBaseVNode("a", {
                                 href: proof.url,
                                 target: "_blank",
                                 class: "proof-link"
-                              }, toDisplayString(unref(t)('pages.calc.modal.link')) + " → ", 9 /* TEXT, PROPS */, _hoisted_53)
+                              }, toDisplayString(unref(t)('pages.calc.modal.link')) + " → ", 9 /* TEXT, PROPS */, _hoisted_53$1)
                             ]))
                           }), 128 /* KEYED_FRAGMENT */))
                         ]))
@@ -42710,11 +42710,11 @@ return (_ctx, _cache) => {
         ]),
         _: 1 /* STABLE */
       }),
-      createBaseVNode("div", _hoisted_54, [
-        createBaseVNode("div", _hoisted_55, [
-          createBaseVNode("div", _hoisted_56, [
-            createBaseVNode("span", _hoisted_57, toDisplayString(unref(t)('pages.calc.total')) + ": ", 1 /* TEXT */),
-            createBaseVNode("div", _hoisted_58, toDisplayString(formatCurrency(totalNet.value, 'USD')), 1 /* TEXT */)
+      createBaseVNode("div", _hoisted_54$1, [
+        createBaseVNode("div", _hoisted_55$1, [
+          createBaseVNode("div", _hoisted_56$1, [
+            createBaseVNode("span", _hoisted_57$1, toDisplayString(unref(t)('pages.calc.total')) + ": ", 1 /* TEXT */),
+            createBaseVNode("div", _hoisted_58$1, toDisplayString(formatCurrency(totalNet.value, 'USD')), 1 /* TEXT */)
           ]),
           createBaseVNode("button", {
             class: "btn-scroll",
@@ -42748,7 +42748,2348 @@ return (_ctx, _cache) => {
 }
 
 };
-const Calc = /*#__PURE__*/_export_sfc(_sfc_main$2, [['__scopeId',"data-v-1f0d6e61"],['__file',"D:/bilbo/presentations/src/pages/Home/components/Calc.vue"]]);
+const Calc = /*#__PURE__*/_export_sfc(_sfc_main$3, [['__scopeId',"data-v-1f0d6e61"],['__file',"D:/bilbo/presentations/src/pages/Home/components/Calc.vue"]]);
+
+const MonetizationCalc_vue_vue_type_style_index_0_scoped_23b8ec4d_lang = '';
+
+const _hoisted_1$1 = { class: "bilbo-calc" };
+const _hoisted_2$1 = { class: "calc-header" };
+const _hoisted_3$1 = { class: "h1-title" };
+const _hoisted_4$1 = { class: "subtitle" };
+const _hoisted_5$1 = { class: "calc-main" };
+const _hoisted_6$1 = ["onClick"];
+const _hoisted_7$1 = { class: "group-identity" };
+const _hoisted_8 = { class: "group-names" };
+const _hoisted_9 = { class: "h3-group" };
+const _hoisted_10 = { class: "group-desc-short" };
+const _hoisted_11 = { class: "group-stat" };
+const _hoisted_12 = { class: "stat-box" };
+const _hoisted_13 = { class: "stat-label" };
+const _hoisted_14 = { class: "stat-sum" };
+const _hoisted_15 = {
+  key: 0,
+  class: "group-content"
+};
+const _hoisted_16 = { class: "sources-list" };
+const _hoisted_17 = { class: "source-header" };
+const _hoisted_18 = { class: "source-meta" };
+const _hoisted_19 = { class: "title-row" };
+const _hoisted_20 = ["onClick"];
+const _hoisted_21 = { class: "model-type" };
+const _hoisted_22 = { class: "source-value" };
+const _hoisted_23 = { class: "controls" };
+const _hoisted_24 = { class: "control-info" };
+const _hoisted_25 = { class: "current-val" };
+const _hoisted_26 = ["onUpdate:modelValue", "min", "max", "step"];
+const _hoisted_27 = { class: "calc-sticky-footer" };
+const _hoisted_28 = { class: "footer-wrap" };
+const _hoisted_29 = { class: "result-grid" };
+const _hoisted_30 = { class: "result-cell" };
+const _hoisted_31 = { class: "cell-label" };
+const _hoisted_32 = { class: "cell-value" };
+const _hoisted_33 = { class: "result-cell" };
+const _hoisted_34 = { class: "cell-label" };
+const _hoisted_35 = { class: "cell-value alt" };
+const _hoisted_36 = { class: "modal-content" };
+const _hoisted_37 = { class: "modal-header" };
+const _hoisted_38 = { class: "font-h4" };
+const _hoisted_39 = { class: "modal-body" };
+const _hoisted_40 = { class: "info-section" };
+const _hoisted_41 = { class: "font-caption uppercase" };
+const _hoisted_42 = { class: "formula-container" };
+const _hoisted_43 = { class: "formula-code" };
+const _hoisted_44 = { class: "font-body-1" };
+const _hoisted_45 = {
+  key: 0,
+  class: "info-section"
+};
+const _hoisted_46 = { class: "font-caption uppercase" };
+const _hoisted_47 = { class: "tiers-grid" };
+const _hoisted_48 = { class: "tier-info-head" };
+const _hoisted_49 = { class: "tier-title font-body-1" };
+const _hoisted_50 = {
+  key: 0,
+  class: "tier-price"
+};
+const _hoisted_51 = {
+  key: 1,
+  class: "tier-price"
+};
+const _hoisted_52 = {
+  key: 2,
+  class: "tier-price"
+};
+const _hoisted_53 = {
+  key: 3,
+  class: "tier-price"
+};
+const _hoisted_54 = { class: "font-body-2" };
+const _hoisted_55 = {
+  key: 0,
+  class: "tier-fee-badge"
+};
+const _hoisted_56 = {
+  key: 1,
+  class: "info-section"
+};
+const _hoisted_57 = { class: "font-caption uppercase" };
+const _hoisted_58 = { class: "proof-title font-body-1" };
+const _hoisted_59 = { class: "font-body-2" };
+const _hoisted_60 = ["href"];
+
+    
+const _sfc_main$2 = {
+  __name: 'MonetizationCalc',
+  setup(__props) {
+
+    stores.locale();
+    const { t } = useI18n();
+
+    const groups = computed(() => ([
+        {
+            id: "take_rate",
+            title: t('pages.monetization-calc.groups.take-rate.title'),
+            description: t('pages.monetization-calc.groups.take-rate.description'),
+            sources: [
+                {
+                    id: "donates",
+                    source: t('pages.monetization-calc.donates.title'),
+                    description: t('pages.monetization-calc.donates.description'),
+                    type: "fan_interaction",
+                    business_model: "take_rate",
+                    currency: "USD",
+                    last_updated: "2026-06",
+                    depends_on_users: true,
+                    calculation_logic: {
+                        formula: "(bilbo_users * donor_conversion / 100) * avg_donation * donations_per_month * (bilbo_fee / 100)",
+                        description: t('pages.monetization-calc.donates.calculation-logic.description')
+                    },
+
+                    tiers: [
+                        {
+                            id: "support",
+                            title: t('pages.monetization-calc.donates.tiers.support.title'),
+                            description: t('pages.monetization-calc.donates.tiers.support.description'),
+                            price_from: 3,
+                            price_to: 10,
+                            bilbo_fee: 12
+                        },
+                        {
+                            id: "reaction",
+                            title: t('pages.monetization-calc.donates.tiers.reaction.title'),
+                            description: t('pages.monetization-calc.donates.tiers.reaction.description'),
+                            price_from: 10,
+                            price_to: 30,
+                            bilbo_fee: 15
+                        },
+                        {
+                            id: "backstage",
+                            title: t('pages.monetization-calc.donates.tiers.backstage.title'),
+                            description: t('pages.monetization-calc.donates.tiers.backstage.description'),
+                            price_from: 30,
+                            price_to: 100,
+                            bilbo_fee: 15
+                        },
+                        {
+                            id: "inner_circle",
+                            title: t('pages.monetization-calc.donates.tiers.inner_circle.title'),
+                            description: t('pages.monetization-calc.donates.tiers.inner_circle.description'),
+                            price_from: 100,
+                            price_to: 500,
+                            bilbo_fee: 10
+                        }
+
+                    ],
+
+                    proofs: [
+                        {
+                            id: "creator_support_growth",
+                            title: t('pages.monetization-calc.donates.proofs.creator_support_growth.title'),
+                            description: t('pages.monetization-calc.donates.proofs.creator_support_growth.description'),
+                            url: "https://newsletter.kk.org/the-technium/1000-true-fans/",
+                            year: 2008
+                        },
+
+                        {
+                            id: "patreon_creator_economy",
+                            title: t('pages.monetization-calc.donates.proofs.patreon_creator_economy.title'),
+                            description: t('pages.monetization-calc.donates.proofs.patreon_creator_economy.description'),
+                            url: "https://news.patreon.com",
+                            year: 2025
+                        },
+
+                        {
+                            id: "digital_tipping_behavior",
+                            title: t('pages.monetization-calc.donates.proofs.digital_tipping_behavior.title'),
+                            description: t('pages.monetization-calc.donates.proofs.digital_tipping_behavior.description'),
+                            url: "https://stripe.com",
+                            year: 2024
+                        }
+
+                    ],
+
+                    ui_elements: {
+                        sliders: [
+                            {
+                                id: "bilbo_users",
+                                label: t('pages.monetization-calc.donates.ui-elements.bilbo_users.label'),
+                                tooltip: t('pages.monetization-calc.donates.ui-elements.bilbo_users.tooltip'),
+                                min: 1000,
+                                max: 10000000,
+                                step: 1000,
+                                default: 100000
+                            },
+
+                            {
+                                id: "donor_conversion",
+                                label: t('pages.monetization-calc.donates.ui-elements.donor_conversion.label'),
+                                tooltip: t('pages.monetization-calc.donates.ui-elements.donor_conversion.tooltip'),
+                                unit: "%",
+                                min: 0.1,
+                                max: 10,
+                                step: 0.1,
+                                default: 1.5
+                            },
+
+                            {
+                                id: "avg_donation",
+                                label: t('pages.monetization-calc.donates.ui-elements.avg_donation.label'),
+                                tooltip: t('pages.monetization-calc.donates.ui-elements.avg_donation.tooltip'),
+                                unit: "$",
+                                min: 1,
+                                max: 300,
+                                step: 1,
+                                default: 15
+                            },
+
+                            {
+                                id: "donations_per_month",
+                                label: t('pages.monetization-calc.donates.ui-elements.donations_per_month.label'),
+                                tooltip: t('pages.monetization-calc.donates.ui-elements.donations_per_month.tooltip'),
+                                min: 1,
+                                max: 10,
+                                step: 1,
+                                default: 2
+                            },
+
+                            {
+                                id: "bilbo_fee",
+                                label: t('pages.monetization-calc.donates.ui-elements.bilbo_fee.label'),
+                                tooltip: t('pages.monetization-calc.donates.ui-elements.bilbo_fee.tooltip'),
+                                unit: "%",
+                                min: 5,
+                                max: 30,
+                                step: 1,
+                                default: 12
+                            }
+
+                        ]
+                    }
+                },
+
+                {
+                    id: "licensing",
+                    source: t('pages.monetization-calc.licensing.title'),
+                    description: t('pages.monetization-calc.licensing.description'),
+                    type: "music_rights",
+                    business_model: "take_rate",
+                    currency: "USD",
+                    last_updated: "2026-06",
+                    depends_on_users: false,
+                    calculation_logic: {
+                        formula: "((creator_count * creator_avg * 0.20) + (commercial_count * commercial_avg * 0.25) + (brand_count * brand_avg * 0.30) + (exclusive_count * exclusive_avg * 0.20))",
+                        description: t('pages.monetization-calc.licensing.calculation-logic.description')
+                    },
+                    tiers: [
+                        {
+                            id: "creator",
+                            title: t('pages.monetization-calc.licensing.tiers.creator.title'),
+                            description: t('pages.monetization-calc.licensing.tiers.creator.description'),
+                            price_from: 10,
+                            price_to: 50,
+                            bilbo_share: 0.20
+                        }, {
+                            id: "commercial",
+                            title: t('pages.monetization-calc.licensing.tiers.commercial.title'),
+                            description: t('pages.monetization-calc.licensing.tiers.commercial.description'),
+                            price_from: 100,
+                            price_to: 500,
+                            bilbo_share: 0.25
+                        }, {
+                            id: "brand",
+                            title: t('pages.monetization-calc.licensing.tiers.brand.title'),
+                            description: t('pages.monetization-calc.licensing.tiers.brand.description'),
+                            price_from: 500,
+                            price_to: 5000,
+                            bilbo_share: 0.30
+                        }, {
+                            id: "exclusive",
+                            title: t('pages.monetization-calc.licensing.tiers.exclusive.title'),
+                            description: t('pages.monetization-calc.licensing.tiers.exclusive.description'),
+                            price_from: 5000,
+                            price_to: 50000,
+                            bilbo_share: 0.20
+                        }
+                    ],
+                    proofs: [
+                        {
+                            id: "creator_music_market",
+                            title: t('pages.monetization-calc.licensing.proofs.creator_music_market.title'),
+                            description: t('pages.monetization-calc.licensing.proofs.creator_music_market.description'),
+                            url: "https://lickd.co",
+                            year: 2025
+                        }, {
+                            id: "music_sync_growth",
+                            title: t('pages.monetization-calc.licensing.proofs.music_sync_growth.title'),
+                            description: t('pages.monetization-calc.licensing.proofs.music_sync_growth.description'),
+                            url: "https://www.ifpi.org",
+                            year: 2025
+                        }, {
+                            id: "creator_economy_video_usage",
+                            title: t('pages.monetization-calc.licensing.proofs.creator_economy_video_usage.title'),
+                            description: t('pages.monetization-calc.licensing.proofs.creator_economy_video_usage.description'),
+                            url: "https://www.youtube.com",
+                            year: 2025
+                        }
+                    ],
+                    ui_elements: {
+                        sliders: [{
+                            id: "creator_count",
+                            label: t('pages.monetization-calc.licensing.ui-elements.creator_count.label'),
+                            tooltip: t('pages.monetization-calc.licensing.ui-elements.creator_count.tooltip'),
+                            min: 0,
+                            max: 5000,
+                            step: 10,
+                            default: 50
+                        }, {
+                            id: "creator_avg",
+                            label: t('pages.monetization-calc.licensing.ui-elements.creator_avg.label'),
+                            tooltip: t('pages.monetization-calc.licensing.ui-elements.creator_avg.tooltip'),
+                            unit: "$",
+                            min: 10,
+                            max: 100,
+                            step: 5,
+                            default: 25
+                        }, {
+                            id: "commercial_count",
+                            label: t('pages.monetization-calc.licensing.ui-elements.commercial_count.label'),
+                            tooltip: t('pages.monetization-calc.licensing.ui-elements.commercial_count.tooltip'),
+                            min: 0,
+                            max: 1000,
+                            step: 5,
+                            default: 10
+                        }, {
+                            id: "commercial_avg",
+                            label: t('pages.monetization-calc.licensing.ui-elements.commercial_avg.label'),
+                            tooltip: t('pages.monetization-calc.licensing.ui-elements.commercial_avg.tooltip'),
+                            unit: "$",
+                            min: 100,
+                            max: 1000,
+                            step: 50,
+                            default: 250
+                        }, {
+                            id: "brand_count",
+                            label: t('pages.monetization-calc.licensing.ui-elements.brand_count.label'),
+                            tooltip: t('pages.monetization-calc.licensing.ui-elements.brand_count.tooltip'),
+                            min: 0,
+                            max: 100,
+                            step: 1,
+                            default: 2
+                        }, {
+                            id: "brand_avg",
+                            label: t('pages.monetization-calc.licensing.ui-elements.brand_avg.label'),
+                            tooltip: t('pages.monetization-calc.licensing.ui-elements.brand_avg.tooltip'),
+                            unit: "$",
+                            min: 500,
+                            max: 10000,
+                            step: 100,
+                            default: 1500
+                        }, {
+                            id: "exclusive_count",
+                            label: t('pages.monetization-calc.licensing.ui-elements.exclusive_count.label'),
+                            tooltip: t('pages.monetization-calc.licensing.ui-elements.exclusive_count.tooltip'),
+                            min: 0,
+                            max: 20,
+                            step: 1,
+                            default: 0
+                        }, {
+                            id: "exclusive_avg",
+                            label: t('pages.monetization-calc.licensing.ui-elements.exclusive_avg.label'),
+                            tooltip: t('pages.monetization-calc.licensing.ui-elements.exclusive_avg.tooltip'),
+                            unit: "$",
+                            min: 5000,
+                            max: 100000,
+                            step: 1000,
+                            default: 10000
+                        }]
+                    }
+                },
+
+                {
+                    id: "merch",
+                    source: t('pages.monetization-calc.merch.title'),
+                    description: t('pages.monetization-calc.merch.description'),
+                    type: "commerce",
+                    business_model: "take_rate",
+                    currency: "USD",
+                    last_updated: "2026-06",
+                    depends_on_users: true,
+                    calculation_logic: {
+                        formula: "(bilbo_users * merch_conversion / 100 * avg_order) * (commission / 100)",
+                        description: t('pages.monetization-calc.merch.calculation-logic.description')
+                    },
+                    proofs: [{
+                        id: "creator_merch_market",
+                        title: t('pages.monetization-calc.merch.proofs.creator_merch_market.title'),
+                        description: t('pages.monetization-calc.merch.proofs.creator_merch_market.description'),
+                        url: "https://shopify.com",
+                        year: 2025
+                    }, {
+                        id: "fan_merch_behavior",
+                        title: t('pages.monetization-calc.merch.proofs.fan_merch_behavior.title'),
+                        description: t('pages.monetization-calc.merch.proofs.fan_merch_behavior.description'),
+                        url: "https://musicbiz.org",
+                        year: 2025
+                    }, {
+                        id: "print_on_demand_growth",
+                        title: t('pages.monetization-calc.merch.proofs.print_on_demand_growth.title'),
+                        description: t('pages.monetization-calc.merch.proofs.print_on_demand_growth.description'),
+                        url: "https://grandviewresearch.com",
+                        year: 2024
+                    }],
+                    ui_elements: {
+                        sliders: [{
+                            id: "bilbo_users",
+                            label: t('pages.monetization-calc.merch.ui-elements.bilbo_users.label'),
+                            tooltip: t('pages.monetization-calc.merch.ui-elements.bilbo_users.tooltip'),
+                            min: 1000,
+                            max: 10000000,
+                            step: 1000,
+                            default: 100000
+                        }, {
+                            id: "merch_conversion",
+                            label: t('pages.monetization-calc.merch.ui-elements.merch_conversion.label'),
+                            tooltip: t('pages.monetization-calc.merch.ui-elements.merch_conversion.tooltip'),
+                            unit: "%",
+                            min: 0.1,
+                            max: 20,
+                            step: 0.1,
+                            default: 1
+                        }, {
+                            id: "avg_order",
+                            label: t('pages.monetization-calc.merch.ui-elements.avg_order.label'),
+                            tooltip: t('pages.monetization-calc.merch.ui-elements.avg_order.tooltip'),
+                            unit: "$",
+                            min: 10,
+                            max: 300,
+                            step: 5,
+                            default: 40
+                        }, {
+                            id: "commission",
+                            label: t('pages.monetization-calc.merch.ui-elements.commission.label'),
+                            tooltip: t('pages.monetization-calc.merch.ui-elements.commission.tooltip'),
+                            unit: "%",
+                            min: 5,
+                            max: 30,
+                            step: 1,
+                            default: 15
+                        }]
+                    }
+                }
+            ]
+        },
+
+        {
+            id: "subscription_saas",
+            title: t('pages.monetization-calc.groups.subscription.title'),
+            description: t('pages.monetization-calc.groups.subscription.description'),
+            sources: [
+                {
+                    id: "distribution",
+                    source: t('pages.monetization-calc.distribution.title'),
+                    description: t('pages.monetization-calc.distribution.description'),
+                    type: "artist_services",
+                    business_model: "subscription",
+                    currency: "USD",
+                    last_updated: "2026-06",
+                    depends_on_users: false,
+                    calculation_logic: {
+                        formula: "(starter_users * starter_price) + (growth_users * growth_price) + (boutique_users * boutique_price) + (promoted_revenue * boutique_revenue_share / 100)",
+                        description: t('pages.monetization-calc.distribution.calculation-logic.description')
+                    },
+                    tiers: [{
+                        id: "starter",
+                        title: t('pages.monetization-calc.distribution.tiers.starter.title'),
+                        description: t('pages.monetization-calc.distribution.tiers.starter.description'),
+                        monthly_price: 20
+                    }, {
+                        id: "growth",
+                        title: t('pages.monetization-calc.distribution.tiers.growth.title'),
+                        description: t('pages.monetization-calc.distribution.tiers.growth.description'),
+                        monthly_price: 100
+                    }, {
+                        id: "boutique",
+                        title: t('pages.monetization-calc.distribution.tiers.boutique.title'),
+                        description: t('pages.monetization-calc.distribution.tiers.boutique.description'),
+                        monthly_price: 500,
+                        revenue_share: 15
+                    }],
+                    proofs: [{
+                        id: "diy_distribution_growth",
+                        title: t('pages.monetization-calc.distribution.proofs.diy_distribution_growth.title'),
+                        description: t('pages.monetization-calc.distribution.proofs.diy_distribution_growth.description'),
+                        url: "https://distrokid.com",
+                        year: 2025
+                    }, {
+                        id: "independent_artist_growth",
+                        title: t('pages.monetization-calc.distribution.proofs.independent_artist_growth.title'),
+                        description: t('pages.monetization-calc.distribution.proofs.independent_artist_growth.description'),
+                        url: "https://www.midiaresearch.com",
+                        year: 2025
+                    }, {
+                        id: "artist_services_market",
+                        title: t('pages.monetization-calc.distribution.proofs.artist_services_market.title'),
+                        description: t('pages.monetization-calc.distribution.proofs.artist_services_market.description'),
+                        url: "https://www.ifpi.org",
+                        year: 2025
+                    }],
+                    ui_elements: {
+                        sliders: [{
+                            id: "starter_users",
+                            label: t('pages.monetization-calc.distribution.ui-elements.starter_users.label'),
+                            tooltip: t('pages.monetization-calc.distribution.ui-elements.starter_users.tooltip'),
+                            min: 0,
+                            max: 50000,
+                            step: 10,
+                            default: 1000
+                        }, {
+                            id: "starter_price",
+                            label: t('pages.monetization-calc.distribution.ui-elements.starter_price.label'),
+                            tooltip: t('pages.monetization-calc.distribution.ui-elements.starter_price.tooltip'),
+                            unit: "$",
+                            min: 5,
+                            max: 50,
+                            step: 1,
+                            default: 20
+                        }, {
+                            id: "growth_users",
+                            label: t('pages.monetization-calc.distribution.ui-elements.growth_users.label'),
+                            tooltip: t('pages.monetization-calc.distribution.ui-elements.growth_users.tooltip'),
+                            min: 0,
+                            max: 10000,
+                            step: 10,
+                            default: 250
+                        }, {
+                            id: "growth_price",
+                            label: t('pages.monetization-calc.distribution.ui-elements.growth_price.label'),
+                            tooltip: t('pages.monetization-calc.distribution.ui-elements.growth_price.tooltip'),
+                            unit: "$",
+                            min: 20,
+                            max: 300,
+                            step: 5,
+                            default: 100
+                        }, {
+                            id: "boutique_users",
+                            label: t('pages.monetization-calc.distribution.ui-elements.boutique_users.label'),
+                            tooltip: t('pages.monetization-calc.distribution.ui-elements.boutique_users.tooltip'),
+                            min: 0,
+                            max: 1000,
+                            step: 1,
+                            default: 25
+                        }, {
+                            id: "boutique_price",
+                            label: t('pages.monetization-calc.distribution.ui-elements.boutique_price.label'),
+                            tooltip: t('pages.monetization-calc.distribution.ui-elements.boutique_price.tooltip'),
+                            unit: "$",
+                            min: 100,
+                            max: 2000,
+                            step: 25,
+                            default: 500
+                        }, {
+                            id: "promoted_revenue",
+                            label: t('pages.monetization-calc.distribution.ui-elements.promoted_revenue.label'),
+                            tooltip: t('pages.monetization-calc.distribution.ui-elements.promoted_revenue.tooltip'),
+                            unit: "$",
+                            min: 0,
+                            max: 10000000,
+                            step: 1000,
+                            default: 100000
+                        }, {
+                            id: "boutique_revenue_share",
+                            label: t('pages.monetization-calc.distribution.ui-elements.boutique_revenue_share.label'),
+                            tooltip: t('pages.monetization-calc.distribution.ui-elements.boutique_revenue_share.tooltip'),
+                            unit: "%",
+                            min: 0,
+                            max: 30,
+                            step: 1,
+                            default: 15
+                        }]
+                    }
+                },
+
+                {
+                    id: "kanby",
+                    source: t('pages.monetization-calc.kanby.title'),
+                    description: t('pages.monetization-calc.kanby.description'),
+                    type: "fan_membership",
+                    business_model: "subscription",
+                    currency: "USD",
+                    last_updated: "2026-06",
+                    depends_on_users: true,
+                    calculation_logic: {
+                        formula: "((subscribers * avg_subscription * bilbo_take / 100) + (paid_tasks * avg_task_price * task_take / 100))",
+                        description: t('pages.monetization-calc.kanby.calculation-logic.description')
+                    },
+                    tiers: [{
+                        id: "observer",
+                        title: t('pages.monetization-calc.kanby.tiers.observer.title'),
+                        description: t('pages.monetization-calc.kanby.tiers.observer.description'),
+                        price_from: 3,
+                        price_to: 10
+                    }, {
+                        id: "participant",
+                        title: t('pages.monetization-calc.kanby.tiers.participant.title'),
+                        description: t('pages.monetization-calc.kanby.tiers.participant.description'),
+                        price_from: 10,
+                        price_to: 25
+                    }, {
+                        id: "supporter",
+                        title: t('pages.monetization-calc.kanby.tiers.supporter.title'),
+                        description: t('pages.monetization-calc.kanby.tiers.supporter.description'),
+                        price_from: 25,
+                        price_to: 100
+                    }, {
+                        id: "executive_producer",
+                        title: t('pages.monetization-calc.kanby.tiers.executive_producer.title'),
+                        description: t('pages.monetization-calc.kanby.tiers.executive_producer.description'),
+                        price_from: 100,
+                        price_to: 1000
+                    }],
+                    proofs: [{
+                        id: "membership_economy",
+                        title: t('pages.monetization-calc.kanby.proofs.membership_economy.title'),
+                        description: t('pages.monetization-calc.kanby.proofs.membership_economy.description'),
+                        url: "https://www.patreon.com",
+                        year: 2025
+                    }, {
+                        id: "community_driven_creation",
+                        title: t('pages.monetization-calc.kanby.proofs.community_driven_creation.title'),
+                        description: t('pages.monetization-calc.kanby.proofs.community_driven_creation.description'),
+                        url: "https://discord.com",
+                        year: 2025
+                    }, {
+                        id: "fan_engagement_value",
+                        title: t('pages.monetization-calc.kanby.proofs.fan_engagement_value.title'),
+                        description: t('pages.monetization-calc.kanby.proofs.fan_engagement_value.description'),
+                        url: "https://www.midiaresearch.com",
+                        year: 2025
+                    }],
+                    ui_elements: {
+                        sliders: [{
+                            id: "subscribers",
+                            label: t('pages.monetization-calc.kanby.ui-elements.subscribers.label'),
+                            tooltip: t('pages.monetization-calc.kanby.ui-elements.subscribers.tooltip'),
+                            min: 0,
+                            max: 100000,
+                            step: 10,
+                            default: 1000
+                        }, {
+                            id: "avg_subscription",
+                            label: t('pages.monetization-calc.kanby.ui-elements.avg_subscription.label'),
+                            tooltip: t('pages.monetization-calc.kanby.ui-elements.avg_subscription.tooltip'),
+                            unit: "$",
+                            min: 1,
+                            max: 100,
+                            step: 1,
+                            default: 10
+                        }, {
+                            id: "bilbo_take",
+                            label: t('pages.monetization-calc.kanby.ui-elements.bilbo_take.label'),
+                            tooltip: t('pages.monetization-calc.kanby.ui-elements.bilbo_take.tooltip'),
+                            unit: "%",
+                            min: 5,
+                            max: 30,
+                            step: 1,
+                            default: 12
+                        }, {
+                            id: "paid_tasks",
+                            label: t('pages.monetization-calc.kanby.ui-elements.paid_tasks.label'),
+                            tooltip: t('pages.monetization-calc.kanby.ui-elements.paid_tasks.tooltip'),
+                            min: 0,
+                            max: 100000,
+                            step: 10,
+                            default: 500
+                        }, {
+                            id: "avg_task_price",
+                            label: t('pages.monetization-calc.kanby.ui-elements.avg_task_price.label'),
+                            tooltip: t('pages.monetization-calc.kanby.ui-elements.avg_task_price.tooltip'),
+                            unit: "$",
+                            min: 1,
+                            max: 100,
+                            step: 1,
+                            default: 5
+                        }, {
+                            id: "task_take",
+                            label: t('pages.monetization-calc.kanby.ui-elements.task_take.label'),
+                            tooltip: t('pages.monetization-calc.kanby.ui-elements.task_take.tooltip'),
+                            unit: "%",
+                            min: 5,
+                            max: 30,
+                            step: 1,
+                            default: 15
+                        }]
+                    }
+                }
+            ]
+        },
+
+        {
+            id: "marketplace",
+            title: t('pages.monetization-calc.groups.marketplace.title'),
+            description: t('pages.monetization-calc.groups.marketplace.description'),
+            sources: [
+                {
+                    id: "better",
+                    source: t('pages.monetization-calc.better.title'),
+                    description: t('pages.monetization-calc.better.description'),
+                    type: "services_marketplace",
+                    business_model: "marketplace",
+                    currency: "USD",
+                    last_updated: "2026-06",
+                    depends_on_users: false,
+                    calculation_logic: {
+                        formula: "((feedback_orders * feedback_avg) + (mixing_orders * mixing_avg) + (mastering_orders * mastering_avg) + (beat_orders * beat_avg) + (production_orders * production_avg) + (session_orders * session_avg)) * (bilbo_commission / 100)",
+                        description: t('pages.monetization-calc.better.calculation-logic.description')
+                    },
+                    tiers: [{
+                        id: "feedback",
+                        title: t('pages.monetization-calc.better.tiers.feedback.title'),
+                        description: t('pages.monetization-calc.better.tiers.feedback.description'),
+                        price_from: 10,
+                        price_to: 100
+                    }, {
+                        id: "mixing",
+                        title: t('pages.monetization-calc.better.tiers.mixing.title'),
+                        description: t('pages.monetization-calc.better.tiers.mixing.description'),
+                        price_from: 50,
+                        price_to: 500
+                    }, {
+                        id: "mastering",
+                        title: t('pages.monetization-calc.better.tiers.mastering.title'),
+                        description: t('pages.monetization-calc.better.tiers.mastering.description'),
+                        price_from: 30,
+                        price_to: 250
+                    }, {
+                        id: "beat",
+                        title: t('pages.monetization-calc.better.tiers.beat.title'),
+                        description: t('pages.monetization-calc.better.tiers.beat.description'),
+                        price_from: 20,
+                        price_to: 1000
+                    }, {
+                        id: "production",
+                        title: t('pages.monetization-calc.better.tiers.production.title'),
+                        description: t('pages.monetization-calc.better.tiers.production.description'),
+                        price_from: 100,
+                        price_to: 5000
+                    }, {
+                        id: "session",
+                        title: t('pages.monetization-calc.better.tiers.session.title'),
+                        description: t('pages.monetization-calc.better.tiers.session.description'),
+                        price_from: 50,
+                        price_to: 1000
+                    }],
+                    proofs: [{
+                        id: "soundbetter_marketplace",
+                        title: t('pages.monetization-calc.better.proofs.soundbetter_marketplace.title'),
+                        description: t('pages.monetization-calc.better.proofs.soundbetter_marketplace.description'),
+                        url: "https://soundbetter.com",
+                        year: 2025
+                    }, {
+                        id: "music_freelance_growth",
+                        title: t('pages.monetization-calc.better.proofs.music_freelance_growth.title'),
+                        description: t('pages.monetization-calc.better.proofs.music_freelance_growth.description'),
+                        url: "https://www.upwork.com",
+                        year: 2025
+                    }, {
+                        id: "creator_service_economy",
+                        title: t('pages.monetization-calc.better.proofs.creator_service_economy.title'),
+                        description: t('pages.monetization-calc.better.proofs.creator_service_economy.description'),
+                        url: "https://www.midiaresearch.com",
+                        year: 2025
+                    }],
+                    ui_elements: {
+                        sliders: [{
+                            id: "feedback_orders",
+                            label: t('pages.monetization-calc.better.ui-elements.feedback_orders.label'),
+                            tooltip: t('pages.monetization-calc.better.ui-elements.feedback_orders.tooltip'),
+                            min: 0,
+                            max: 100000,
+                            step: 10,
+                            default: 100
+                        }, {
+                            id: "feedback_avg",
+                            label: t('pages.monetization-calc.better.ui-elements.feedback_avg.label'),
+                            tooltip: t('pages.monetization-calc.better.ui-elements.feedback_avg.tooltip'),
+                            unit: "$",
+                            min: 10,
+                            max: 100,
+                            step: 1,
+                            default: 30
+                        }, {
+                            id: "mixing_orders",
+                            label: t('pages.monetization-calc.better.ui-elements.mixing_orders.label'),
+                            tooltip: t('pages.monetization-calc.better.ui-elements.mixing_orders.tooltip'),
+                            min: 0,
+                            max: 100000,
+                            step: 10,
+                            default: 50
+                        }, {
+                            id: "mixing_avg",
+                            label: t('pages.monetization-calc.better.ui-elements.mixing_avg.label'),
+                            tooltip: t('pages.monetization-calc.better.ui-elements.mixing_avg.tooltip'),
+                            unit: "$",
+                            min: 50,
+                            max: 1000,
+                            step: 10,
+                            default: 150
+                        }, {
+                            id: "mastering_orders",
+                            label: t('pages.monetization-calc.better.ui-elements.mastering_orders.label'),
+                            tooltip: t('pages.monetization-calc.better.ui-elements.mastering_orders.tooltip'),
+                            min: 0,
+                            max: 100000,
+                            step: 10,
+                            default: 50
+                        }, {
+                            id: "mastering_avg",
+                            label: t('pages.monetization-calc.better.ui-elements.mastering_avg.label'),
+                            tooltip: t('pages.monetization-calc.better.ui-elements.mastering_avg.tooltip'),
+                            unit: "$",
+                            min: 30,
+                            max: 500,
+                            step: 5,
+                            default: 80
+                        }, {
+                            id: "beat_orders",
+                            label: t('pages.monetization-calc.better.ui-elements.beat_orders.label'),
+                            tooltip: t('pages.monetization-calc.better.ui-elements.beat_orders.tooltip'),
+                            min: 0,
+                            max: 100000,
+                            step: 10,
+                            default: 20
+                        }, {
+                            id: "beat_avg",
+                            label: t('pages.monetization-calc.better.ui-elements.beat_avg.label'),
+                            tooltip: t('pages.monetization-calc.better.ui-elements.beat_avg.tooltip'),
+                            unit: "$",
+                            min: 20,
+                            max: 2000,
+                            step: 10,
+                            default: 100
+                        }, {
+                            id: "production_orders",
+                            label: t('pages.monetization-calc.better.ui-elements.production_orders.label'),
+                            tooltip: t('pages.monetization-calc.better.ui-elements.production_orders.tooltip'),
+                            min: 0,
+                            max: 10000,
+                            step: 1,
+                            default: 5
+                        }, {
+                            id: "production_avg",
+                            label: t('pages.monetization-calc.better.ui-elements.production_avg.label'),
+                            tooltip: t('pages.monetization-calc.better.ui-elements.production_avg.tooltip'),
+                            unit: "$",
+                            min: 100,
+                            max: 10000,
+                            step: 50,
+                            default: 1000
+                        }, {
+                            id: "session_orders",
+                            label: t('pages.monetization-calc.better.ui-elements.session_orders.label'),
+                            tooltip: t('pages.monetization-calc.better.ui-elements.session_orders.tooltip'),
+                            min: 0,
+                            max: 100000,
+                            step: 10,
+                            default: 20
+                        }, {
+                            id: "session_avg",
+                            label: t('pages.monetization-calc.better.ui-elements.session_avg.label'),
+                            tooltip: t('pages.monetization-calc.better.ui-elements.session_avg.tooltip'),
+                            unit: "$",
+                            min: 50,
+                            max: 2000,
+                            step: 10,
+                            default: 250
+                        }, {
+                            id: "bilbo_commission",
+                            label: t('pages.monetization-calc.better.ui-elements.bilbo_commission.label'),
+                            tooltip: t('pages.monetization-calc.better.ui-elements.bilbo_commission.tooltip'),
+                            unit: "%",
+                            min: 5,
+                            max: 30,
+                            step: 1,
+                            default: 15
+                        }]
+                    }
+                },
+                {
+                    id: "playlist_pitching",
+                    source: t('pages.monetization-calc.playlist_pitching.title'),
+                    description: t('pages.monetization-calc.playlist_pitching.description'),
+                    type: "music_discovery",
+                    business_model: "marketplace",
+                    currency: "USD",
+                    last_updated: "2026-06",
+                    depends_on_users: false,
+                    calculation_logic: {
+                        formula: "((submissions * submission_price * bilbo_submission_fee / 100) + (accepted_tracks * placement_fee * bilbo_placement_fee / 100))",
+                        description: t('pages.monetization-calc.playlist_pitching.calculation-logic.description')
+                    },
+                    proofs: [{
+                        id: "submithub_market",
+                        title: t('pages.monetization-calc.playlist_pitching.proofs.submithub_market.title'),
+                        description: t('pages.monetization-calc.playlist_pitching.proofs.submithub_market.description'),
+                        url: "https://submithub.com",
+                        year: 2025
+                    }, {
+                        id: "groover_growth",
+                        title: t('pages.monetization-calc.playlist_pitching.proofs.groover_growth.title'),
+                        description: t('pages.monetization-calc.playlist_pitching.proofs.groover_growth.description'),
+                        url: "https://groover.co",
+                        year: 2025
+                    }, {
+                        id: "playlist_discovery",
+                        title: t('pages.monetization-calc.playlist_pitching.proofs.playlist_discovery.title'),
+                        description: t('pages.monetization-calc.playlist_pitching.proofs.playlist_discovery.description'),
+                        url: "https://www.spotify.com",
+                        year: 2025
+                    }],
+                    ui_elements: {
+                        sliders: [{
+                            id: "submissions",
+                            label: t('pages.monetization-calc.playlist_pitching.ui-elements.submissions.label'),
+                            tooltip: t('pages.monetization-calc.playlist_pitching.ui-elements.submissions.tooltip'),
+                            min: 0,
+                            max: 1000000,
+                            step: 10,
+                            default: 1000
+                        }, {
+                            id: "submission_price",
+                            label: t('pages.monetization-calc.playlist_pitching.ui-elements.submission_price.label'),
+                            tooltip: t('pages.monetization-calc.playlist_pitching.ui-elements.submission_price.tooltip'),
+                            unit: "$",
+                            min: 1,
+                            max: 50,
+                            step: 1,
+                            default: 5
+                        }, {
+                            id: "bilbo_submission_fee",
+                            label: t('pages.monetization-calc.playlist_pitching.ui-elements.bilbo_submission_fee.label'),
+                            tooltip: t('pages.monetization-calc.playlist_pitching.ui-elements.bilbo_submission_fee.tooltip'),
+                            unit: "%",
+                            min: 10,
+                            max: 100,
+                            step: 1,
+                            default: 30
+                        }, {
+                            id: "accepted_tracks",
+                            label: t('pages.monetization-calc.playlist_pitching.ui-elements.accepted_tracks.label'),
+                            tooltip: t('pages.monetization-calc.playlist_pitching.ui-elements.accepted_tracks.tooltip'),
+                            min: 0,
+                            max: 100000,
+                            step: 1,
+                            default: 100
+                        }, {
+                            id: "placement_fee",
+                            label: t('pages.monetization-calc.playlist_pitching.ui-elements.placement_fee.label'),
+                            tooltip: t('pages.monetization-calc.playlist_pitching.ui-elements.placement_fee.tooltip'),
+                            unit: "$",
+                            min: 5,
+                            max: 500,
+                            step: 5,
+                            default: 25
+                        }, {
+                            id: "bilbo_placement_fee",
+                            label: t('pages.monetization-calc.playlist_pitching.ui-elements.bilbo_placement_fee.label'),
+                            tooltip: t('pages.monetization-calc.playlist_pitching.ui-elements.bilbo_placement_fee.tooltip'),
+                            unit: "%",
+                            min: 5,
+                            max: 50,
+                            step: 1,
+                            default: 15
+                        }]
+                    }
+                },
+                {
+                    id: "plugin_store",
+                    source: t('pages.monetization-calc.plugin_store.title'),
+                    description: t('pages.monetization-calc.plugin_store.description'),
+                    type: "digital_marketplace",
+                    business_model: "marketplace",
+                    currency: "USD",
+                    last_updated: "2026-06",
+                    depends_on_users: false,
+                    calculation_logic: {
+                        formula: "((paid_plugins * avg_plugin_price) + (subscriptions * avg_subscription_price * 12)) * (bilbo_commission / 100)",
+                        description: t('pages.monetization-calc.plugin_store.calculation-logic.description')
+                    },
+                    tiers: [{
+                        id: "visualizer",
+                        title: t('pages.monetization-calc.plugin_store.tiers.visualizer.title'),
+                        description: t('pages.monetization-calc.plugin_store.tiers.visualizer.description'),
+                        price_from: 1,
+                        price_to: 20
+                    }, {
+                        id: "game",
+                        title: t('pages.monetization-calc.plugin_store.tiers.game.title'),
+                        description: t('pages.monetization-calc.plugin_store.tiers.game.description'),
+                        price_from: 3,
+                        price_to: 50
+                    }, {
+                        id: "ai",
+                        title: t('pages.monetization-calc.plugin_store.tiers.ai.title'),
+                        description: t('pages.monetization-calc.plugin_store.tiers.ai.description'),
+                        price_from: 5,
+                        price_to: 100
+                    }, {
+                        id: "social",
+                        title: t('pages.monetization-calc.plugin_store.tiers.social.title'),
+                        description: t('pages.monetization-calc.plugin_store.tiers.social.description'),
+                        price_from: 1,
+                        price_to: 30
+                    }, {
+                        id: "premium",
+                        title: t('pages.monetization-calc.plugin_store.tiers.premium.title'),
+                        description: t('pages.monetization-calc.plugin_store.tiers.premium.description'),
+                        price_from: 10,
+                        price_to: 200
+                    }],
+                    proofs: [{
+                        id: "app_store_economics",
+                        title: t('pages.monetization-calc.plugin_store.proofs.app_store_economics.title'),
+                        description: t('pages.monetization-calc.plugin_store.proofs.app_store_economics.description'),
+                        url: "https://developer.apple.com/app-store/",
+                        year: 2025
+                    }, {
+                        id: "steam_workshop",
+                        title: t('pages.monetization-calc.plugin_store.proofs.steam_workshop.title'),
+                        description: t('pages.monetization-calc.plugin_store.proofs.steam_workshop.description'),
+                        url: "https://steamcommunity.com/workshop/",
+                        year: 2025
+                    }, {
+                        id: "creator_marketplaces",
+                        title: t('pages.monetization-calc.plugin_store.proofs.creator_marketplaces.title'),
+                        description: t('pages.monetization-calc.plugin_store.proofs.creator_marketplaces.description'),
+                        url: "https://www.unrealengine.com/marketplace",
+                        year: 2025
+                    }],
+                    ui_elements: {
+                        sliders: [{
+                            id: "paid_plugins",
+                            label: t('pages.monetization-calc.plugin_store.ui-elements.paid_plugins.label'),
+                            tooltip: t('pages.monetization-calc.plugin_store.ui-elements.paid_plugins.tooltip'),
+                            min: 0,
+                            max: 1000000,
+                            step: 10,
+                            default: 1000
+                        }, {
+                            id: "avg_plugin_price",
+                            label: t('pages.monetization-calc.plugin_store.ui-elements.avg_plugin_price.label'),
+                            tooltip: t('pages.monetization-calc.plugin_store.ui-elements.avg_plugin_price.tooltip'),
+                            unit: "$",
+                            min: 1,
+                            max: 200,
+                            step: 1,
+                            default: 10
+                        }, {
+                            id: "subscriptions",
+                            label: t('pages.monetization-calc.plugin_store.ui-elements.subscriptions.label'),
+                            tooltip: t('pages.monetization-calc.plugin_store.ui-elements.subscriptions.tooltip'),
+                            min: 0,
+                            max: 100000,
+                            step: 1,
+                            default: 100
+                        }, {
+                            id: "avg_subscription_price",
+                            label: t('pages.monetization-calc.plugin_store.ui-elements.avg_subscription_price.label'),
+                            tooltip: t('pages.monetization-calc.plugin_store.ui-elements.avg_subscription_price.tooltip'),
+                            unit: "$",
+                            min: 1,
+                            max: 100,
+                            step: 1,
+                            default: 5
+                        }, {
+                            id: "bilbo_commission",
+                            label: t('pages.monetization-calc.plugin_store.ui-elements.bilbo_commission.label'),
+                            tooltip: t('pages.monetization-calc.plugin_store.ui-elements.bilbo_commission.tooltip'),
+                            unit: "%",
+                            min: 5,
+                            max: 50,
+                            step: 1,
+                            default: 20
+                        }]
+                    }
+                }
+            ]
+        },
+
+
+        {
+            id: "advertising_reach",
+            title: t('pages.monetization-calc.groups.reach.title'),
+            description: t('pages.monetization-calc.groups.reach.description'),
+            sources: [
+                {
+                    id: "direct_audience",
+                    source: t('pages.monetization-calc.direct_audience.title'),
+                    description: t('pages.monetization-calc.direct_audience.description'),
+                    type: "audience_marketing",
+                    business_model: "reach",
+                    currency: "USD",
+                    last_updated: "2026-06",
+                    depends_on_users: true,
+                    calculation_logic: {
+                        formula: "((campaigns * audience_size / 1000 * cpm) + (premium_campaigns * premium_price))",
+                        description: t('pages.monetization-calc.direct_audience.calculation-logic.description')
+                    },
+                    tiers: [{
+                        id: "release",
+                        title: t('pages.monetization-calc.direct_audience.tiers.release.title'),
+                        description: t('pages.monetization-calc.direct_audience.tiers.release.description')
+                    }, {
+                        id: "concert",
+                        title: t('pages.monetization-calc.direct_audience.tiers.concert.title'),
+                        description: t('pages.monetization-calc.direct_audience.tiers.concert.description')
+                    }, {
+                        id: "merch",
+                        title: t('pages.monetization-calc.direct_audience.tiers.merch.title'),
+                        description: t('pages.monetization-calc.direct_audience.tiers.merch.description')
+                    }, {
+                        id: "exclusive",
+                        title: t('pages.monetization-calc.direct_audience.tiers.exclusive.title'),
+                        description: t('pages.monetization-calc.direct_audience.tiers.exclusive.description')
+                    }, {
+                        id: "survey",
+                        title: t('pages.monetization-calc.direct_audience.tiers.survey.title'),
+                        description: t('pages.monetization-calc.direct_audience.tiers.survey.description')
+                    }],
+                    proofs: [{
+                        id: "owned_audience",
+                        title: t('pages.monetization-calc.direct_audience.proofs.owned_audience.title'),
+                        description: t('pages.monetization-calc.direct_audience.proofs.owned_audience.description'),
+                        url: "https://mailchimp.com",
+                        year: 2025
+                    }, {
+                        id: "creator_crm",
+                        title: t('pages.monetization-calc.direct_audience.proofs.creator_crm.title'),
+                        description: t('pages.monetization-calc.direct_audience.proofs.creator_crm.description'),
+                        url: "https://convertkit.com",
+                        year: 2025
+                    }, {
+                        id: "fan_engagement",
+                        title: t('pages.monetization-calc.direct_audience.proofs.fan_engagement.title'),
+                        description: t('pages.monetization-calc.direct_audience.proofs.fan_engagement.description'),
+                        url: "https://www.midiaresearch.com",
+                        year: 2025
+                    }],
+                    ui_elements: {
+                        sliders: [{
+                            id: "campaigns",
+                            label: t('pages.monetization-calc.direct_audience.ui-elements.campaigns.label'),
+                            tooltip: t('pages.monetization-calc.direct_audience.ui-elements.campaigns.tooltip'),
+                            min: 0,
+                            max: 1000,
+                            step: 1,
+                            default: 10
+                        }, {
+                            id: "audience_size",
+                            label: t('pages.monetization-calc.direct_audience.ui-elements.audience_size.label'),
+                            tooltip: t('pages.monetization-calc.direct_audience.ui-elements.audience_size.tooltip'),
+                            min: 100,
+                            max: 10000000,
+                            step: 100,
+                            default: 10000
+                        }, {
+                            id: "cpm",
+                            label: t('pages.monetization-calc.direct_audience.ui-elements.cpm.label'),
+                            tooltip: t('pages.monetization-calc.direct_audience.ui-elements.cpm.tooltip'),
+                            unit: "$",
+                            min: 1,
+                            max: 50,
+                            step: 1,
+                            default: 5
+                        }, {
+                            id: "premium_campaigns",
+                            label: t('pages.monetization-calc.direct_audience.ui-elements.premium_campaigns.label'),
+                            tooltip: t('pages.monetization-calc.direct_audience.ui-elements.premium_campaigns.tooltip'),
+                            min: 0,
+                            max: 1000,
+                            step: 1,
+                            default: 2
+                        }, {
+                            id: "premium_price",
+                            label: t('pages.monetization-calc.direct_audience.ui-elements.premium_price.label'),
+                            tooltip: t('pages.monetization-calc.direct_audience.ui-elements.premium_price.tooltip'),
+                            unit: "$",
+                            min: 1,
+                            max: 500,
+                            step: 1,
+                            default: 25
+                        }]
+                    }
+                },
+                {
+                    id: "discovery",
+                    source: t('pages.monetization-calc.discovery.title'),
+                    description: t('pages.monetization-calc.discovery.description'),
+                    type: "music_promotion",
+                    business_model: "reach",
+                    currency: "USD",
+                    last_updated: "2026-06",
+                    depends_on_users: true,
+                    calculation_logic: {
+                        formula: "((promoted_tracks * avg_campaign_budget) + (engagements * engagement_fee))",
+                        description: t('pages.monetization-calc.discovery.calculation-logic.description')
+                    },
+                    tiers: [{
+                        id: "new_release",
+                        title: t('pages.monetization-calc.discovery.tiers.new_release.title'),
+                        description: t('pages.monetization-calc.discovery.tiers.new_release.description')
+                    }, {
+                        id: "catalog",
+                        title: t('pages.monetization-calc.discovery.tiers.catalog.title'),
+                        description: t('pages.monetization-calc.discovery.tiers.catalog.description')
+                    }, {
+                        id: "artist_boost",
+                        title: t('pages.monetization-calc.discovery.tiers.artist_boost.title'),
+                        description: t('pages.monetization-calc.discovery.tiers.artist_boost.description')
+                    }, {
+                        id: "playlist_boost",
+                        title: t('pages.monetization-calc.discovery.tiers.playlist_boost.title'),
+                        description: t('pages.monetization-calc.discovery.tiers.playlist_boost.description')
+                    }],
+                    proofs: [{
+                        id: "spotify_showcase",
+                        title: t('pages.monetization-calc.discovery.proofs.spotify_showcase.title'),
+                        description: t('pages.monetization-calc.discovery.proofs.spotify_showcase.description'),
+                        url: "https://artists.spotify.com",
+                        year: 2025
+                    }, {
+                        id: "spotify_discovery_mode",
+                        title: t('pages.monetization-calc.discovery.proofs.spotify_discovery_mode.title'),
+                        description: t('pages.monetization-calc.discovery.proofs.spotify_discovery_mode.description'),
+                        url: "https://artists.spotify.com",
+                        year: 2025
+                    }, {
+                        id: "tiktok_promote",
+                        title: t('pages.monetization-calc.discovery.proofs.tiktok_promote.title'),
+                        description: t('pages.monetization-calc.discovery.proofs.tiktok_promote.description'),
+                        url: "https://ads.tiktok.com",
+                        year: 2025
+                    }],
+                    ui_elements: {
+                        sliders: [{
+                            id: "promoted_tracks",
+                            label: t('pages.monetization-calc.discovery.ui-elements.promoted_tracks.label'),
+                            tooltip: t('pages.monetization-calc.discovery.ui-elements.promoted_tracks.tooltip'),
+                            min: 0,
+                            max: 100000,
+                            step: 1,
+                            default: 100
+                        }, {
+                            id: "avg_campaign_budget",
+                            label: t('pages.monetization-calc.discovery.ui-elements.avg_campaign_budget.label'),
+                            tooltip: t('pages.monetization-calc.discovery.ui-elements.avg_campaign_budget.tooltip'),
+                            unit: "$",
+                            min: 5,
+                            max: 1000,
+                            step: 5,
+                            default: 50
+                        }, {
+                            id: "engagements",
+                            label: t('pages.monetization-calc.discovery.ui-elements.engagements.label'),
+                            tooltip: t('pages.monetization-calc.discovery.ui-elements.engagements.tooltip'),
+                            min: 0,
+                            max: 10000000,
+                            step: 100,
+                            default: 100000
+                        }, {
+                            id: "engagement_fee",
+                            label: t('pages.monetization-calc.discovery.ui-elements.engagement_fee.label'),
+                            tooltip: t('pages.monetization-calc.discovery.ui-elements.engagement_fee.tooltip'),
+                            unit: "$",
+                            min: 0.001,
+                            max: 0.5,
+                            step: 0.001,
+                            default: 0.01
+                        }]
+                    }
+                }
+            ]
+        },
+
+        {
+            id: "asset_sales",
+            title: t('pages.monetization-calc.groups.asset-sales.title'),
+            description: t('pages.monetization-calc.groups.asset-sales.description'),
+            sources: [
+                {
+                    id: "aura",
+                    source: t('pages.monetization-calc.aura.title'),
+                    description: t('pages.monetization-calc.aura.description'),
+                    type: "digital_assets",
+                    business_model: "asset_sales",
+                    currency: "USD",
+                    last_updated: "2026-06",
+                    depends_on_users: true,
+                    calculation_logic: {
+                        formula: "(aura_sales * avg_aura_price) * (bilbo_commission / 100)",
+                        description: t('pages.monetization-calc.aura.calculation-logic.description')
+                    },
+                    aura_types: [{
+                        id: "studio",
+                        title: t('pages.monetization-calc.aura.aura-types.studio.title'),
+                        description: t('pages.monetization-calc.aura.aura-types.studio.description'),
+                        price_from: 1,
+                        price_to: 10
+                    }, {
+                        id: "backstage",
+                        title: t('pages.monetization-calc.aura.aura-types.backstage.title'),
+                        description: t('pages.monetization-calc.aura.aura-types.backstage.description'),
+                        price_from: 3,
+                        price_to: 20
+                    }, {
+                        id: "voice",
+                        title: t('pages.monetization-calc.aura.aura-types.voice.title'),
+                        description: t('pages.monetization-calc.aura.aura-types.voice.description'),
+                        price_from: 2,
+                        price_to: 30
+                    }, {
+                        id: "concert",
+                        title: t('pages.monetization-calc.aura.aura-types.concert.title'),
+                        description: t('pages.monetization-calc.aura.aura-types.concert.description'),
+                        price_from: 5,
+                        price_to: 50
+                    }, {
+                        id: "exclusive",
+                        title: t('pages.monetization-calc.aura.aura-types.exclusive.title'),
+                        description: t('pages.monetization-calc.aura.aura-types.exclusive.description'),
+                        price_from: 10,
+                        price_to: 100
+                    }],
+                    proofs: [{
+                        id: "patreon_extras",
+                        title: t('pages.monetization-calc.aura.proofs.patreon_extras.title'),
+                        description: t('pages.monetization-calc.aura.proofs.patreon_extras.description'),
+                        url: "https://www.patreon.com",
+                        year: 2025
+                    }, {
+                        id: "superfan_economy",
+                        title: t('pages.monetization-calc.aura.proofs.superfan_economy.title'),
+                        description: t('pages.monetization-calc.aura.proofs.superfan_economy.description'),
+                        url: "https://www.midiaresearch.com",
+                        year: 2025
+                    }, {
+                        id: "digital_collectibles",
+                        title: t('pages.monetization-calc.aura.proofs.digital_collectibles.title'),
+                        description: t('pages.monetization-calc.aura.proofs.digital_collectibles.description'),
+                        url: "https://www.luminate.com",
+                        year: 2025
+                    }],
+                    ui_elements: {
+                        sliders: [{
+                            id: "bilbo_users",
+                            label: t('pages.monetization-calc.aura.ui-elements.bilbo_users.label'),
+                            tooltip: t('pages.monetization-calc.aura.ui-elements.bilbo_users.tooltip'),
+                            min: 1000,
+                            max: 10000000,
+                            step: 1000,
+                            default: 100000
+                        }, {
+                            id: "purchase_conversion",
+                            label: t('pages.monetization-calc.aura.ui-elements.purchase_conversion.label'),
+                            tooltip: t('pages.monetization-calc.aura.ui-elements.purchase_conversion.tooltip'),
+                            min: 0.01,
+                            max: 10,
+                            step: 0.01,
+                            default: 0.5
+                        }, {
+                            id: "aura_sales",
+                            label: t('pages.monetization-calc.aura.ui-elements.aura_sales.label'),
+                            tooltip: t('pages.monetization-calc.aura.ui-elements.aura_sales.tooltip'),
+                            min: 0,
+                            max: 1000000,
+                            step: 1,
+                            default: 500
+                        }, {
+                            id: "avg_aura_price",
+                            label: t('pages.monetization-calc.aura.ui-elements.avg_aura_price.label'),
+                            tooltip: t('pages.monetization-calc.aura.ui-elements.avg_aura_price.tooltip'),
+                            unit: "$",
+                            min: 1,
+                            max: 100,
+                            step: 1,
+                            default: 10
+                        }, {
+                            id: "bilbo_commission",
+                            label: t('pages.monetization-calc.aura.ui-elements.bilbo_commission.label'),
+                            tooltip: t('pages.monetization-calc.aura.ui-elements.bilbo_commission.tooltip'),
+                            unit: "%",
+                            min: 5,
+                            max: 40,
+                            step: 1,
+                            default: 20
+                        }]
+                    }
+                },
+                {
+                    id: "stickers",
+                    source: t('pages.monetization-calc.stickers.title'),
+                    description: t('pages.monetization-calc.stickers.description'),
+                    type: "digital_assets",
+                    business_model: "asset_sales",
+                    currency: "USD",
+                    last_updated: "2026-06",
+                    depends_on_users: true,
+                    calculation_logic: {
+                        formula: "(sticker_sales * avg_pack_price) * (bilbo_commission / 100)",
+                        description: t('pages.monetization-calc.stickers.calculation-logic.description')
+                    },
+                    sticker_types: [{
+                        id: "artist_pack",
+                        title: t('pages.monetization-calc.stickers.sticker-types.artist_pack.title'),
+                        description: t('pages.monetization-calc.stickers.sticker-types.artist_pack.description'),
+                        price_from: 1,
+                        price_to: 10
+                    }, {
+                        id: "album_pack",
+                        title: t('pages.monetization-calc.stickers.sticker-types.album_pack.title'),
+                        description: t('pages.monetization-calc.stickers.sticker-types.album_pack.description'),
+                        price_from: 2,
+                        price_to: 15
+                    }, {
+                        id: "animated_pack",
+                        title: t('pages.monetization-calc.stickers.sticker-types.animated_pack.title'),
+                        description: t('pages.monetization-calc.stickers.sticker-types.animated_pack.description'),
+                        price_from: 3,
+                        price_to: 20
+                    }, {
+                        id: "limited_pack",
+                        title: t('pages.monetization-calc.stickers.sticker-types.limited_pack.title'),
+                        description: t('pages.monetization-calc.stickers.sticker-types.limited_pack.description'),
+                        price_from: 5,
+                        price_to: 50
+                    }, {
+                        id: "fan_pack",
+                        title: t('pages.monetization-calc.stickers.sticker-types.fan_pack.title'),
+                        description: t('pages.monetization-calc.stickers.sticker-types.fan_pack.description'),
+                        price_from: 1,
+                        price_to: 10
+                    }],
+                    proofs: [{
+                        id: "telegram_stickers",
+                        title: t('pages.monetization-calc.stickers.proofs.telegram_stickers.title'),
+                        description: t('pages.monetization-calc.stickers.proofs.telegram_stickers.description'),
+                        url: "https://telegram.org",
+                        year: 2025
+                    }, {
+                        id: "digital_goods",
+                        title: t('pages.monetization-calc.stickers.proofs.digital_goods.title'),
+                        description: t('pages.monetization-calc.stickers.proofs.digital_goods.description'),
+                        url: "https://www.midiaresearch.com",
+                        year: 2025
+                    }, {
+                        id: "creator_economy",
+                        title: t('pages.monetization-calc.stickers.proofs.creator_economy.title'),
+                        description: t('pages.monetization-calc.stickers.proofs.creator_economy.description'),
+                        url: "https://www.patreon.com",
+                        year: 2025
+                    }],
+                    ui_elements: {
+                        sliders: [{
+                            id: "bilbo_users",
+                            label: t('pages.monetization-calc.stickers.ui-elements.bilbo_users.label'),
+                            tooltip: t('pages.monetization-calc.stickers.ui-elements.bilbo_users.tooltip'),
+                            min: 1000,
+                            max: 10000000,
+                            step: 1000,
+                            default: 100000
+                        }, {
+                            id: "purchase_conversion",
+                            label: t('pages.monetization-calc.stickers.ui-elements.purchase_conversion.label'),
+                            tooltip: t('pages.monetization-calc.stickers.ui-elements.purchase_conversion.tooltip'),
+                            min: 0.01,
+                            max: 20,
+                            step: 0.01,
+                            default: 1
+                        }, {
+                            id: "sticker_sales",
+                            label: t('pages.monetization-calc.stickers.ui-elements.sticker_sales.label'),
+                            tooltip: t('pages.monetization-calc.stickers.ui-elements.sticker_sales.tooltip'),
+                            min: 0,
+                            max: 10000000,
+                            step: 10,
+                            default: 1000
+                        }, {
+                            id: "avg_pack_price",
+                            label: t('pages.monetization-calc.stickers.ui-elements.avg_pack_price.label'),
+                            tooltip: t('pages.monetization-calc.stickers.ui-elements.avg_pack_price.tooltip'),
+                            unit: "$",
+                            min: 1,
+                            max: 50,
+                            step: 1,
+                            default: 5
+                        }, {
+                            id: "bilbo_commission",
+                            label: t('pages.monetization-calc.stickers.ui-elements.bilbo_commission.label'),
+                            tooltip: t('pages.monetization-calc.stickers.ui-elements.bilbo_commission.tooltip'),
+                            unit: "%",
+                            min: 5,
+                            max: 50,
+                            step: 1,
+                            default: 20
+                        }]
+                    }
+                },
+                {
+                    id: "fan_packs",
+                    source: t('pages.monetization-calc.fan_packs.title'),
+                    description: t('pages.monetization-calc.fan_packs.description'),
+                    type: "fan_membership",
+                    business_model: "revenue_share",
+                    currency: "USD",
+                    last_updated: "2026-06",
+                    depends_on_users: true,
+                    calculation_logic: {
+                        formula: "(subscribers * avg_subscription_price) * (bilbo_commission / 100)",
+                        description: t('pages.monetization-calc.fan_packs.calculation-logic.description')
+                    },
+                    tiers: [{
+                        id: "supporter",
+                        title: t('pages.monetization-calc.fan_packs.tiers.supporter.title'),
+                        description: t('pages.monetization-calc.fan_packs.tiers.supporter.description'),
+                        price_from: 1,
+                        price_to: 5
+                    }, {
+                        id: "fan",
+                        title: t('pages.monetization-calc.fan_packs.tiers.fan.title'),
+                        description: t('pages.monetization-calc.fan_packs.tiers.fan.description'),
+                        price_from: 5,
+                        price_to: 15
+                    }, {
+                        id: "superfan",
+                        title: t('pages.monetization-calc.fan_packs.tiers.superfan.title'),
+                        description: t('pages.monetization-calc.fan_packs.tiers.superfan.description'),
+                        price_from: 15,
+                        price_to: 50
+                    }, {
+                        id: "vip",
+                        title: t('pages.monetization-calc.fan_packs.tiers.vip.title'),
+                        description: t('pages.monetization-calc.fan_packs.tiers.vip.description'),
+                        price_from: 50,
+                        price_to: 200
+                    }],
+                    proofs: [{
+                        id: "patreon_memberships",
+                        title: t('pages.monetization-calc.fan_packs.proofs.patreon_memberships.title'),
+                        description: t('pages.monetization-calc.fan_packs.proofs.patreon_memberships.description'),
+                        url: "https://www.patreon.com",
+                        year: 2025
+                    }, {
+                        id: "boosty_memberships",
+                        title: t('pages.monetization-calc.fan_packs.proofs.boosty_memberships.title'),
+                        description: t('pages.monetization-calc.fan_packs.proofs.boosty_memberships.description'),
+                        url: "https://boosty.to",
+                        year: 2025
+                    }, {
+                        id: "superfan_economy",
+                        title: t('pages.monetization-calc.fan_packs.proofs.superfan_economy.title'),
+                        description: t('pages.monetization-calc.fan_packs.proofs.superfan_economy.description'),
+                        url: "https://www.midiaresearch.com",
+                        year: 2025
+                    }],
+                    ui_elements: {
+                        sliders: [{
+                            id: "bilbo_users",
+                            label: t('pages.monetization-calc.fan_packs.ui-elements.bilbo_users.label'),
+                            tooltip: t('pages.monetization-calc.fan_packs.ui-elements.bilbo_users.tooltip'),
+                            min: 1000,
+                            max: 10000000,
+                            step: 1000,
+                            default: 100000
+                        }, {
+                            id: "subscriber_conversion",
+                            label: t('pages.monetization-calc.fan_packs.ui-elements.subscriber_conversion.label'),
+                            tooltip: t('pages.monetization-calc.fan_packs.ui-elements.subscriber_conversion.tooltip'),
+                            min: 0.01,
+                            max: 20,
+                            step: 0.01,
+                            default: 1
+                        }, {
+                            id: "subscribers",
+                            label: t('pages.monetization-calc.fan_packs.ui-elements.subscribers.label'),
+                            tooltip: t('pages.monetization-calc.fan_packs.ui-elements.subscribers.tooltip'),
+                            min: 0,
+                            max: 1000000,
+                            step: 1,
+                            default: 1000
+                        }, {
+                            id: "avg_subscription_price",
+                            label: t('pages.monetization-calc.fan_packs.ui-elements.avg_subscription_price.label'),
+                            tooltip: t('pages.monetization-calc.fan_packs.ui-elements.avg_subscription_price.tooltip'),
+                            unit: "$",
+                            min: 1,
+                            max: 100,
+                            step: 1,
+                            default: 10
+                        }, {
+                            id: "bilbo_commission",
+                            label: t('pages.monetization-calc.fan_packs.ui-elements.bilbo_commission.label'),
+                            tooltip: t('pages.monetization-calc.fan_packs.ui-elements.bilbo_commission.tooltip'),
+                            unit: "%",
+                            min: 5,
+                            max: 40,
+                            step: 1,
+                            default: 15
+                        }]
+                    }
+                }
+            ]
+        },
+
+        {
+            id: "revenue_share",
+            title: t('pages.monetization-calc.groups.revenue-share.title'),
+            description: t('pages.monetization-calc.groups.revenue-share.description'),
+            sources: [
+                {
+                    id: "artist_acceleration",
+                    source: t('pages.monetization-calc.artist_acceleration.title'),
+                    description: t('pages.monetization-calc.artist_acceleration.description'),
+                    type: "artist_growth",
+                    business_model: "revenue_share",
+                    currency: "USD",
+                    last_updated: "2026-06",
+                    depends_on_users: false,
+                    calculation_logic: {
+                        formula: "(accelerated_artists * avg_artist_revenue * bilbo_share / 100)",
+                        description: t('pages.monetization-calc.artist_acceleration.calculation-logic.description')
+                    },
+                    tiers: [{
+                        id: "launch",
+                        title: t('pages.monetization-calc.artist_acceleration.tiers.launch.title'),
+                        description: t('pages.monetization-calc.artist_acceleration.tiers.launch.description'),
+                        bilbo_share_from: 5,
+                        bilbo_share_to: 10
+                    }, {
+                        id: "growth",
+                        title: t('pages.monetization-calc.artist_acceleration.tiers.growth.title'),
+                        description: t('pages.monetization-calc.artist_acceleration.tiers.growth.description'),
+                        bilbo_share_from: 10,
+                        bilbo_share_to: 20
+                    }, {
+                        id: "breakout",
+                        title: t('pages.monetization-calc.artist_acceleration.tiers.breakout.title'),
+                        description: t('pages.monetization-calc.artist_acceleration.tiers.breakout.description'),
+                        bilbo_share_from: 15,
+                        bilbo_share_to: 30
+                    }],
+                    proofs: [{
+                        id: "artist_services",
+                        title: t('pages.monetization-calc.artist_acceleration.proofs.artist_services.title'),
+                        description: t('pages.monetization-calc.artist_acceleration.proofs.artist_services.description'),
+                        url: "https://indieamplify.com",
+                        year: 2025
+                    }, {
+                        id: "label_services",
+                        title: t('pages.monetization-calc.artist_acceleration.proofs.label_services.title'),
+                        description: t('pages.monetization-calc.artist_acceleration.proofs.label_services.description'),
+                        url: "https://awal.com",
+                        year: 2025
+                    }, {
+                        id: "superstar_economics",
+                        title: t('pages.monetization-calc.artist_acceleration.proofs.superstar_economics.title'),
+                        description: t('pages.monetization-calc.artist_acceleration.proofs.superstar_economics.description'),
+                        url: "https://www.midiaresearch.com",
+                        year: 2025
+                    }],
+                    ui_elements: {
+                        sliders: [{
+                            id: "accelerated_artists",
+                            label: t('pages.monetization-calc.artist_acceleration.ui-elements.accelerated_artists.label'),
+                            tooltip: t('pages.monetization-calc.artist_acceleration.ui-elements.accelerated_artists.tooltip'),
+                            min: 0,
+                            max: 10000,
+                            step: 1,
+                            default: 100
+                        }, {
+                            id: "avg_artist_revenue",
+                            label: t('pages.monetization-calc.artist_acceleration.ui-elements.avg_artist_revenue.label'),
+                            tooltip: t('pages.monetization-calc.artist_acceleration.ui-elements.avg_artist_revenue.tooltip'),
+                            unit: "$",
+                            min: 100,
+                            max: 1000000,
+                            step: 100,
+                            default: 10000
+                        }, {
+                            id: "bilbo_share",
+                            label: t('pages.monetization-calc.artist_acceleration.ui-elements.bilbo_share.label'),
+                            tooltip: t('pages.monetization-calc.artist_acceleration.ui-elements.bilbo_share.tooltip'),
+                            unit: "%",
+                            min: 1,
+                            max: 50,
+                            step: 1,
+                            default: 15
+                        }]
+                    }
+                },
+                {
+                    id: "playlist_partnership",
+                    source: t('pages.monetization-calc.playlist_partnership.title'),
+                    description: t('pages.monetization-calc.playlist_partnership.description'),
+                    type: "playlist_ecosystem",
+                    business_model: "revenue_share",
+                    currency: "USD",
+                    last_updated: "2026-06",
+                    depends_on_users: true,
+                    calculation_logic: {
+                        formula: "(playlist_partners * artists_per_partner * avg_artist_revenue) * (partnership_share / 100)",
+                        description: t('pages.monetization-calc.playlist_partnership.calculation-logic.description')
+                    },
+                    tiers: [{
+                        id: "curator",
+                        title: t('pages.monetization-calc.playlist_partnership.tiers.curator.title'),
+                        description: t('pages.monetization-calc.playlist_partnership.tiers.curator.description'),
+                        revenue_share_from: 0.5,
+                        revenue_share_to: 1
+                    }, {
+                        id: "verified_curator",
+                        title: t('pages.monetization-calc.playlist_partnership.tiers.verified_curator.title'),
+                        description: t('pages.monetization-calc.playlist_partnership.tiers.verified_curator.description'),
+                        revenue_share_from: 1,
+                        revenue_share_to: 2
+                    }, {
+                        id: "editorial_partner",
+                        title: t('pages.monetization-calc.playlist_partnership.tiers.editorial_partner.title'),
+                        description: t('pages.monetization-calc.playlist_partnership.tiers.editorial_partner.description'),
+                        revenue_share_from: 2,
+                        revenue_share_to: 5
+                    }],
+                    proofs: [{
+                        id: "submithub",
+                        title: t('pages.monetization-calc.playlist_partnership.proofs.submithub.title'),
+                        description: t('pages.monetization-calc.playlist_partnership.proofs.submithub.description'),
+                        url: "https://www.submithub.com",
+                        year: 2025
+                    }, {
+                        id: "affiliate_economy",
+                        title: t('pages.monetization-calc.playlist_partnership.proofs.affiliate_economy.title'),
+                        description: t('pages.monetization-calc.playlist_partnership.proofs.affiliate_economy.description'),
+                        url: "https://partnerstack.com",
+                        year: 2025
+                    }, {
+                        id: "creator_partnerships",
+                        title: t('pages.monetization-calc.playlist_partnership.proofs.creator_partnerships.title'),
+                        description: t('pages.monetization-calc.playlist_partnership.proofs.creator_partnerships.description'),
+                        url: "https://www.youtube.com",
+                        year: 2025
+                    }],
+                    ui_elements: {
+                        sliders: [{
+                            id: "playlist_partners",
+                            label: t('pages.monetization-calc.playlist_partnership.ui-elements.playlist_partners.label'),
+                            tooltip: t('pages.monetization-calc.playlist_partnership.ui-elements.playlist_partners.tooltip'),
+                            min: 0,
+                            max: 50000,
+                            step: 1,
+                            default: 100
+                        }, {
+                            id: "artists_per_partner",
+                            label: t('pages.monetization-calc.playlist_partnership.ui-elements.artists_per_partner.label'),
+                            tooltip: t('pages.monetization-calc.playlist_partnership.ui-elements.artists_per_partner.tooltip'),
+                            min: 1,
+                            max: 500,
+                            step: 1,
+                            default: 20
+                        }, {
+                            id: "avg_artist_revenue",
+                            label: t('pages.monetization-calc.playlist_partnership.ui-elements.avg_artist_revenue.label'),
+                            tooltip: t('pages.monetization-calc.playlist_partnership.ui-elements.avg_artist_revenue.tooltip'),
+                            unit: "$",
+                            min: 10,
+                            max: 100000,
+                            step: 10,
+                            default: 500
+                        }, {
+                            id: "partnership_share",
+                            label: t('pages.monetization-calc.playlist_partnership.ui-elements.partnership_share.label'),
+                            tooltip: t('pages.monetization-calc.playlist_partnership.ui-elements.partnership_share.tooltip'),
+                            unit: "%",
+                            min: 0.5,
+                            max: 5,
+                            step: 0.1,
+                            default: 1
+                        }]
+                    }
+                },
+
+                {
+                    id: "artist_ads",
+                    source: t('pages.monetization-calc.artist_ads.title'),
+                    description: t('pages.monetization-calc.artist_ads.description'),
+                    type: "advertising",
+                    business_model: "marketplace_commission",
+                    currency: "USD",
+                    last_updated: "2026-06",
+                    depends_on_users: false,
+                    calculation_logic: {
+                        formula: "(ad_orders_per_month * avg_ad_order_value * bilbo_commission / 100)",
+                        description: t('pages.monetization-calc.artist_ads.calculation-logic.description')
+                    },
+                    formats: [{
+                        id: "audio",
+                        title: t('pages.monetization-calc.artist_ads.formats.audio.title'),
+                        description: t('pages.monetization-calc.artist_ads.formats.audio.description'),
+                        avg_price_from: 50,
+                        avg_price_to: 300
+                    }, {
+                        id: "video",
+                        title: t('pages.monetization-calc.artist_ads.formats.video.title'),
+                        description: t('pages.monetization-calc.artist_ads.formats.video.description'),
+                        avg_price_from: 300,
+                        avg_price_to: 5000
+                    }, {
+                        id: "campaign",
+                        title: t('pages.monetization-calc.artist_ads.formats.campaign.title'),
+                        description: t('pages.monetization-calc.artist_ads.formats.campaign.description'),
+                        avg_price_from: 1000,
+                        avg_price_to: 50000
+                    }],
+                    proofs: [{
+                        id: "cameo",
+                        title: t('pages.monetization-calc.artist_ads.proofs.cameo.title'),
+                        description: t('pages.monetization-calc.artist_ads.proofs.cameo.description'),
+                        url: "https://www.cameo.com",
+                        year: 2025
+                    }, {
+                        id: "influencer_marketing",
+                        title: t('pages.monetization-calc.artist_ads.proofs.influencer_marketing.title'),
+                        description: t('pages.monetization-calc.artist_ads.proofs.influencer_marketing.description'),
+                        url: "https://www.influencermarketinghub.com",
+                        year: 2025
+                    }, {
+                        id: "creator_economy",
+                        title: t('pages.monetization-calc.artist_ads.proofs.creator_economy.title'),
+                        description: t('pages.monetization-calc.artist_ads.proofs.creator_economy.description'),
+                        url: "https://www.midiaresearch.com",
+                        year: 2025
+                    }],
+                    ui_elements: {
+                        sliders: [{
+                            id: "ad_orders_per_month",
+                            label: t('pages.monetization-calc.artist_ads.ui-elements.ad_orders_per_month.label'),
+                            tooltip: t('pages.monetization-calc.artist_ads.ui-elements.ad_orders_per_month.tooltip'),
+                            min: 0,
+                            max: 100000,
+                            step: 1,
+                            default: 100
+                        }, {
+                            id: "avg_ad_order_value",
+                            label: t('pages.monetization-calc.artist_ads.ui-elements.avg_ad_order_value.label'),
+                            tooltip: t('pages.monetization-calc.artist_ads.ui-elements.avg_ad_order_value.tooltip'),
+                            unit: "$",
+                            min: 10,
+                            max: 100000,
+                            step: 10,
+                            default: 500
+                        }, {
+                            id: "bilbo_commission",
+                            label: t('pages.monetization-calc.artist_ads.ui-elements.bilbo_commission.label'),
+                            tooltip: t('pages.monetization-calc.artist_ads.ui-elements.bilbo_commission.tooltip'),
+                            unit: "%",
+                            min: 1,
+                            max: 50,
+                            step: 1,
+                            default: 20
+                        }]
+                    }
+                }
+            ]
+        }
+    ]));
+
+    const scrollPos = ref(0);
+    const expandedId = ref(groups.value[0]?.id);
+    const activeInfo = ref(null);
+
+    // Инициализация стейта для всех вложенных слайдеров
+    const state = reactive({});
+
+    groups.value.forEach(group => {
+        group.sources.forEach(source => {
+            state[source.id] = {};
+            source.ui_elements.sliders.forEach(slider => {
+                state[source.id][slider.id] = slider.default;
+            });
+        });
+    });
+
+    const handleEsc = (e) => {
+        if (e.key === 'Escape') {
+            closeInfo();
+        }
+    };
+
+    const openInfo = (source) => {
+        scrollPos.value = window.scrollY;
+        activeInfo.value = source;
+    };
+
+    const closeInfo = () => {
+        activeInfo.value = null;
+    };
+
+    watch(activeInfo, (newVal) => {
+        if (newVal) {
+            document.body.style.position = 'fixed';
+            document.body.style.top = `-${scrollPos.value}px`;
+            document.body.style.width = '100%';
+
+            window.addEventListener('keydown', handleEsc);
+        } else {
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.body.style.width = '';
+            window.scrollTo(0, scrollPos.value);
+
+            window.removeEventListener('keydown', handleEsc);
+        }
+    });
+
+    const toggleGroup = (id) => expandedId.value = expandedId.value === id ? null : id;
+
+    const calculateSource = (source) => {
+        let formula = source.calculation_logic.formula;
+        const values = state[source.id];
+        Object.keys(values).forEach(key => {
+            let val = values[key];
+            // if (key.includes('conversion') || key.includes('share') || key.includes('fee')) val /= 100;
+            formula = formula.replace(new RegExp(`\\b${key}\\b`, 'g'), val);
+        });
+        try {
+            return eval(formula) || 0;
+        } catch {
+            return 0;
+        }
+    };
+
+    const calculateGroup = (g) => g.sources.reduce((acc, s) => acc + calculateSource(s), 0);
+    const totalMonthly = computed(() => groups.value.reduce((acc, g) => acc + calculateGroup(g), 0));
+
+    const formatCurrency = (v) => new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        maximumFractionDigits: 0
+    }).format(v);
+    const formatValue = (v, u) => u === '%' ? `${v}%` : u === '$' ? `$${v.toLocaleString()}` : v.toLocaleString();
+
+
+    const exportToPDF = () => {
+      // Выбираем только те группы, где есть хотя бы один активный источник (доход > 0)
+      const activeGroups = groups.value.filter(group => 
+        group.sources.some(s => calculateSource(s) > 0)
+      );
+
+      const element = document.createElement('div');
+      
+      // 1. Стили и Заглавная страница
+      let content = `
+        <style>
+          @import url('https://googleapis.com');
+          .pdf-wrapper { font-family: 'Montserrat', sans-serif !important; background: #121212; color: #ffffff; }
+          .formula-box { 
+            background: rgba(50, 50, 50, 0.5); 
+            padding: 15px; 
+            border-radius: 12px; 
+            font-family: monospace !important; 
+            color: #eb9af2; /* --secondary-300 */
+            font-size: 13px;
+            border: 1px solid rgba(255,255,255,0.1);
+          }
+          .page { padding: 40px; min-height: 295mm; box-sizing: border-box; position: relative; }
+          .text-primary { color: #1086ff; } /* --primary-500 */
+          .text-secondary { color: #8e8e93; } /* --dark-20 */
+        </style>
+        
+        <div class="pdf-wrapper">
+          <!-- ТИТУЛЬНЫЙ ЛИСТ -->
+          <div class="page">
+            <h1 style="font-size: 36px; margin-bottom: 5px;" class="text-primary">Bilbo Monetization</h1>
+            <p class="text-secondary" style="margin-bottom: 50px;">
+              ${t('pages.monetization-calc.export.date')}: ${new Date().toLocaleDateString()}
+            </p>
+            
+            <div style="background: rgba(16, 134, 255, 0.1); padding: 40px; border-radius: 30px; border: 1px solid #1086ff; margin-bottom: 50px;">
+              <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 2px;" class="text-primary">
+                ${t('pages.monetization-calc.export.total-monthly')}
+              </div>
+              <div style="font-size: 56px; font-weight: bold; margin-top: 10px;">
+                ${formatCurrency(totalMonthly.value)}
+              </div>
+              <div style="margin-top: 20px; font-size: 18px; color: #34c759; font-weight: bold;">
+                Annual Projection: ${formatCurrency(totalMonthly.value * 12)}
+              </div>
+            </div>
+
+            <h3 style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; margin-bottom: 25px;">
+              ${t('pages.monetization-calc.export.summary')}
+            </h3>
+            <table style="width: 100%; border-collapse: collapse;">
+              ${activeGroups.map(group => `
+                <tr style="background: rgba(255,255,255,0.03);">
+                  <td style="padding: 15px; font-weight: bold; border-radius: 10px 0 0 10px;">${group.title}</td>
+                  <td style="padding: 15px; text-align: right; font-weight: bold; border-radius: 0 10px 10px 0;" class="text-primary">
+                    ${formatCurrency(calculateGroup(group))}
+                  </td>
+                </tr>
+                <tr><td colspan="2" style="height: 8px;"></td></tr>
+              `).join('')}
+            </table>
+          </div>
+      `;
+
+      // 2. Детальные страницы для каждого источника
+      activeGroups.forEach(group => {
+        group.sources.forEach(source => {
+          if (calculateSource(source) === 0) return;
+
+          const values = state[source.id];
+          
+          content += `
+            <div class="page" style="page-break-before: always;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid #1086ff; padding-bottom: 15px; margin-bottom: 30px;">
+                <div>
+                  <div style="font-size: 12px; text-transform: uppercase;" class="text-secondary">${group.title}</div>
+                  <h2 style="margin: 5px 0 0 0; font-size: 28px;">${source.source}</h2>
+                </div>
+                <div style="text-align: right;">
+                   <span class="text-primary" style="font-weight: bold; text-transform: uppercase; font-size: 10px;">Model: ${source.business_model}</span>
+                </div>
+              </div>
+
+              <div style="margin-bottom: 40px;">
+                <h4 style="font-size: 12px; text-transform: uppercase; margin-bottom: 15px;" class="text-primary">User Configuration:</h4>
+                <table style="width: 100%; background: rgba(255,255,255,0.02); border-radius: 15px; border-collapse: collapse;">
+                  ${source.ui_elements.sliders.map(slider => `
+                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                      <td style="padding: 12px 20px; font-size: 14px;">${slider.label}</td>
+                      <td style="padding: 12px 20px; text-align: right; font-weight: bold; color: #1086ff;">
+                        ${formatValue(values[slider.id], slider.unit)}
+                      </td>
+                    </tr>
+                  `).join('')}
+                </table>
+              </div>
+
+              <div style="margin-bottom: 40px;">
+                <h4 style="font-size: 12px; text-transform: uppercase; margin-bottom: 15px;" class="text-primary">Calculation Logic:</h4>
+                <div class="formula-box">${source.calculation_logic.formula}</div>
+                <p style="font-size: 14px; color: #8e8e93; line-height: 1.6; margin-top: 15px;">
+                  ${source.calculation_logic.description}
+                </p>
+              </div>
+
+              <div style="position: absolute; bottom: 60px; right: 40px; left: 40px; padding: 30px; background: rgba(16, 134, 255, 0.05); border-radius: 20px; text-align: right; border: 1px dashed rgba(16, 134, 255, 0.3);">
+                <div style="font-size: 12px; color: #8e8e93; text-transform: uppercase;">Estimated Monthly Revenue:</div>
+                <div style="font-size: 32px; font-weight: bold; color: #ffffff; margin-top: 5px;">
+                  ${formatCurrency(calculateSource(source))}
+                </div>
+              </div>
+            </div>
+          `;
+        });
+      });
+
+      element.innerHTML = content + '</div>';
+
+      const opt = {
+        margin: 0,
+        filename: `Bilbo_Monetization_Report_${new Date().toISOString().slice(0,10)}.pdf`,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, backgroundColor: '#121212', useCORS: true },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      };
+
+      html2pdf().set(opt).from(element).save();
+    };
+
+
+return (_ctx, _cache) => {
+  return (openBlock(), createElementBlock("div", _hoisted_1$1, [
+    createBaseVNode("header", _hoisted_2$1, [
+      createBaseVNode("h1", _hoisted_3$1, toDisplayString(unref(t)('pages.monetization-calc.title')), 1 /* TEXT */),
+      createBaseVNode("p", _hoisted_4$1, toDisplayString(unref(t)('pages.monetization-calc.description')), 1 /* TEXT */)
+    ]),
+    createBaseVNode("main", _hoisted_5$1, [
+      (openBlock(true), createElementBlock(Fragment, null, renderList(groups.value, (group) => {
+        return (openBlock(), createElementBlock("section", {
+          key: group.id,
+          class: normalizeClass(["group-node", { 'is-active': expandedId.value === group.id }])
+        }, [
+          createCommentVNode(" Заголовок группы "),
+          createBaseVNode("div", {
+            class: "group-trigger",
+            onClick: $event => (toggleGroup(group.id))
+          }, [
+            createBaseVNode("div", _hoisted_7$1, [
+              createCommentVNode(" <div class=\"group-badge\">{{ group.sources.length }}</div> "),
+              createBaseVNode("div", _hoisted_8, [
+                createBaseVNode("h2", _hoisted_9, toDisplayString(group.title), 1 /* TEXT */),
+                createVNode(Transition, { name: "fade" }, {
+                  default: withCtx(() => [
+                    createBaseVNode("p", _hoisted_10, toDisplayString(group.description), 1 /* TEXT */)
+                  ]),
+                  _: 2 /* DYNAMIC */
+                }, 1024 /* DYNAMIC_SLOTS */)
+              ])
+            ]),
+            createBaseVNode("div", _hoisted_11, [
+              createBaseVNode("div", _hoisted_12, [
+                createBaseVNode("span", _hoisted_13, toDisplayString(unref(t)('pages.monetization-calc.group-forecast')), 1 /* TEXT */),
+                _cache[0] || (_cache[0] = createTextVNode()),
+                createBaseVNode("span", _hoisted_14, toDisplayString(formatCurrency(calculateGroup(group))), 1 /* TEXT */)
+              ]),
+              createBaseVNode("div", {
+                class: normalizeClass(["arrow", { 'up': expandedId.value === group.id }])
+              }, [...(_cache[1] || (_cache[1] = [
+                createBaseVNode("svg", {
+                  width: "24",
+                  height: "24",
+                  viewBox: "0 0 24 24",
+                  fill: "none",
+                  xmlns: "http://w3.org"
+                }, [
+                  createBaseVNode("path", {
+                    d: "M7 10L12 15L17 10",
+                    stroke: "currentColor",
+                    "stroke-width": "2",
+                    "stroke-linecap": "round"
+                  })
+                ], -1 /* HOISTED */)
+              ]))], 2 /* CLASS */)
+            ])
+          ], 8 /* PROPS */, _hoisted_6$1),
+          createCommentVNode(" Контент источников "),
+          createVNode(Transition, { name: "slide" }, {
+            default: withCtx(() => [
+              (expandedId.value === group.id)
+                ? (openBlock(), createElementBlock("div", _hoisted_15, [
+                    createBaseVNode("div", _hoisted_16, [
+                      (openBlock(true), createElementBlock(Fragment, null, renderList(group.sources, (source) => {
+                        return (openBlock(), createElementBlock("div", {
+                          key: source.id,
+                          class: "source-card"
+                        }, [
+                          createBaseVNode("div", _hoisted_17, [
+                            createBaseVNode("div", _hoisted_18, [
+                              createBaseVNode("div", _hoisted_19, [
+                                createBaseVNode("h4", null, toDisplayString(source.source), 1 /* TEXT */),
+                                createCommentVNode(" Кнопка вызова модалки "),
+                                createBaseVNode("button", {
+                                  onClick: withModifiers($event => (openInfo(source)), ["stop"]),
+                                  class: "info-btn"
+                                }, [...(_cache[2] || (_cache[2] = [
+                                  createBaseVNode("svg", {
+                                    width: "18",
+                                    height: "18",
+                                    viewBox: "0 0 24 24",
+                                    fill: "none",
+                                    stroke: "currentColor",
+                                    "stroke-width": "2"
+                                  }, [
+                                    createBaseVNode("circle", {
+                                      cx: "12",
+                                      cy: "12",
+                                      r: "10"
+                                    }),
+                                    createBaseVNode("line", {
+                                      x1: "12",
+                                      y1: "16",
+                                      x2: "12",
+                                      y2: "12"
+                                    }),
+                                    createBaseVNode("line", {
+                                      x1: "11",
+                                      y1: "8",
+                                      x2: "13",
+                                      y2: "8"
+                                    })
+                                  ], -1 /* HOISTED */)
+                                ]))], 8 /* PROPS */, _hoisted_20)
+                              ]),
+                              createBaseVNode("span", _hoisted_21, toDisplayString(source.business_model), 1 /* TEXT */)
+                            ]),
+                            createBaseVNode("div", _hoisted_22, toDisplayString(formatCurrency(calculateSource(source))), 1 /* TEXT */)
+                          ]),
+                          createBaseVNode("div", _hoisted_23, [
+                            (openBlock(true), createElementBlock(Fragment, null, renderList(source.ui_elements.sliders, (slider) => {
+                              return (openBlock(), createElementBlock("div", {
+                                key: slider.id,
+                                class: "control-row"
+                              }, [
+                                createBaseVNode("div", _hoisted_24, [
+                                  createBaseVNode("label", null, toDisplayString(slider.label), 1 /* TEXT */),
+                                  createBaseVNode("span", _hoisted_25, toDisplayString(formatValue(state[source.id][slider.id], slider.unit)), 1 /* TEXT */)
+                                ]),
+                                withDirectives(createBaseVNode("input", {
+                                  type: "range",
+                                  "onUpdate:modelValue": $event => ((state[source.id][slider.id]) = $event),
+                                  min: slider.min,
+                                  max: slider.max,
+                                  step: slider.step,
+                                  class: "bilbo-range"
+                                }, null, 8 /* PROPS */, _hoisted_26), [
+                                  [
+                                    vModelText,
+                                    state[source.id][slider.id],
+                                    void 0,
+                                    { number: true }
+                                  ]
+                                ])
+                              ]))
+                            }), 128 /* KEYED_FRAGMENT */))
+                          ])
+                        ]))
+                      }), 128 /* KEYED_FRAGMENT */))
+                    ])
+                  ]))
+                : createCommentVNode("v-if", true)
+            ]),
+            _: 2 /* DYNAMIC */
+          }, 1024 /* DYNAMIC_SLOTS */)
+        ], 2 /* CLASS */))
+      }), 128 /* KEYED_FRAGMENT */))
+    ]),
+    createCommentVNode(" Фиксированный футер с итогами "),
+    createBaseVNode("footer", _hoisted_27, [
+      createBaseVNode("div", _hoisted_28, [
+        createBaseVNode("div", _hoisted_29, [
+          createBaseVNode("div", _hoisted_30, [
+            createBaseVNode("span", _hoisted_31, toDisplayString(unref(t)('pages.monetization-calc.monthly-income')), 1 /* TEXT */),
+            _cache[3] || (_cache[3] = createTextVNode()),
+            createBaseVNode("span", _hoisted_32, toDisplayString(formatCurrency(totalMonthly.value)), 1 /* TEXT */)
+          ]),
+          _cache[5] || (_cache[5] = createBaseVNode("div", { class: "v-divider" }, null, -1 /* HOISTED */)),
+          createBaseVNode("div", _hoisted_33, [
+            createBaseVNode("span", _hoisted_34, toDisplayString(unref(t)('pages.monetization-calc.annual-potential')), 1 /* TEXT */),
+            _cache[4] || (_cache[4] = createTextVNode()),
+            createBaseVNode("span", _hoisted_35, toDisplayString(formatCurrency(totalMonthly.value * 12)), 1 /* TEXT */)
+          ])
+        ]),
+        createBaseVNode("button", {
+          class: "export-btn font-body-2",
+          onClick: exportToPDF
+        }, toDisplayString(unref(t)('pages.monetization-calc.export-label')), 1 /* TEXT */)
+      ])
+    ]),
+    createCommentVNode(" Модальное окно (в самом конце шаблона) "),
+    createVNode(Transition, { name: "fade" }, {
+      default: withCtx(() => [
+        (activeInfo.value)
+          ? (openBlock(), createElementBlock("div", {
+              key: 0,
+              class: "modal-overlay",
+              onClick: withModifiers(closeInfo, ["self"])
+            }, [
+              createBaseVNode("div", _hoisted_36, [
+                createBaseVNode("div", _hoisted_37, [
+                  createBaseVNode("h2", _hoisted_38, toDisplayString(activeInfo.value.source), 1 /* TEXT */),
+                  createBaseVNode("button", {
+                    onClick: closeInfo,
+                    class: "close-x"
+                  }, "×")
+                ]),
+                createBaseVNode("div", _hoisted_39, [
+                  createCommentVNode(" Логика расчета "),
+                  createBaseVNode("section", _hoisted_40, [
+                    createBaseVNode("h4", _hoisted_41, toDisplayString(unref(t)('pages.monetization-calc.modal.logic')), 1 /* TEXT */),
+                    createBaseVNode("div", _hoisted_42, [
+                      createBaseVNode("code", _hoisted_43, toDisplayString(activeInfo.value.calculation_logic.formula), 1 /* TEXT */)
+                    ]),
+                    createBaseVNode("p", _hoisted_44, toDisplayString(activeInfo.value.calculation_logic.description), 1 /* TEXT */)
+                  ]),
+                  (activeInfo.value.tiers?.length)
+                    ? (openBlock(), createElementBlock("section", _hoisted_45, [
+                        createBaseVNode("h4", _hoisted_46, toDisplayString(unref(t)('pages.monetization-calc.modal.tiers')), 1 /* TEXT */),
+                        createBaseVNode("div", _hoisted_47, [
+                          (openBlock(true), createElementBlock(Fragment, null, renderList(activeInfo.value.tiers, (tier) => {
+                            return (openBlock(), createElementBlock("div", {
+                              key: tier.id,
+                              class: "tier-info-card"
+                            }, [
+                              createBaseVNode("div", _hoisted_48, [
+                                createBaseVNode("span", _hoisted_49, [
+                                  createBaseVNode("b", null, toDisplayString(tier.title), 1 /* TEXT */)
+                                ]),
+                                (tier.price_from)
+                                  ? (openBlock(), createElementBlock("span", _hoisted_50, " $" + toDisplayString(tier.price_from) + " — $" + toDisplayString(tier.price_to), 1 /* TEXT */))
+                                  : createCommentVNode("v-if", true),
+                                (tier.monthly_price)
+                                  ? (openBlock(), createElementBlock("span", _hoisted_51, " $" + toDisplayString(tier.monthly_price), 1 /* TEXT */))
+                                  : createCommentVNode("v-if", true),
+                                (tier.revenue_share_from)
+                                  ? (openBlock(), createElementBlock("span", _hoisted_52, toDisplayString(tier.revenue_share_from) + " — " + toDisplayString(tier.revenue_share_to), 1 /* TEXT */))
+                                  : createCommentVNode("v-if", true),
+                                (tier.bilbo_share_from)
+                                  ? (openBlock(), createElementBlock("span", _hoisted_53, toDisplayString(tier.bilbo_share_from) + " — " + toDisplayString(tier.bilbo_share_to), 1 /* TEXT */))
+                                  : createCommentVNode("v-if", true)
+                              ]),
+                              createBaseVNode("p", _hoisted_54, toDisplayString(tier.description), 1 /* TEXT */),
+                              (tier.bilbo_fee)
+                                ? (openBlock(), createElementBlock("div", _hoisted_55, " Fee: " + toDisplayString(tier.bilbo_fee) + "% ", 1 /* TEXT */))
+                                : createCommentVNode("v-if", true)
+                            ]))
+                          }), 128 /* KEYED_FRAGMENT */))
+                        ])
+                      ]))
+                    : createCommentVNode("v-if", true),
+                  createCommentVNode(" Пруфы и источники "),
+                  (activeInfo.value.proofs?.length)
+                    ? (openBlock(), createElementBlock("section", _hoisted_56, [
+                        createBaseVNode("h4", _hoisted_57, toDisplayString(unref(t)('pages.monetization-calc.modal.sources')), 1 /* TEXT */),
+                        (openBlock(true), createElementBlock(Fragment, null, renderList(activeInfo.value.proofs, (proof) => {
+                          return (openBlock(), createElementBlock("div", {
+                            key: proof.id,
+                            class: "proof-item"
+                          }, [
+                            createBaseVNode("div", _hoisted_58, [
+                              createBaseVNode("b", null, toDisplayString(proof.title), 1 /* TEXT */),
+                              createTextVNode(" (" + toDisplayString(proof.year) + ") ", 1 /* TEXT */)
+                            ]),
+                            createBaseVNode("p", _hoisted_59, toDisplayString(proof.description), 1 /* TEXT */),
+                            _cache[6] || (_cache[6] = createTextVNode()),
+                            createBaseVNode("a", {
+                              href: proof.url,
+                              target: "_blank",
+                              class: "proof-link"
+                            }, toDisplayString(unref(t)('pages.monetization-calc.modal.link')) + " →", 9 /* TEXT, PROPS */, _hoisted_60)
+                          ]))
+                        }), 128 /* KEYED_FRAGMENT */))
+                      ]))
+                    : createCommentVNode("v-if", true)
+                ])
+              ])
+            ]))
+          : createCommentVNode("v-if", true)
+      ]),
+      _: 1 /* STABLE */
+    })
+  ]))
+}
+}
+
+};
+const MonetizationCalc = /*#__PURE__*/_export_sfc(_sfc_main$2, [['__scopeId',"data-v-23b8ec4d"],['__file',"D:/bilbo/presentations/src/pages/Home/components/MonetizationCalc.vue"]]);
 
 const _sfc_main$1 = {
   __name: 'Ready',
@@ -42837,6 +45178,10 @@ const _sfc_main = {
         {
             id: 'revenue_2026',
             title: t('pages.calc.title')
+        },
+        {
+            id: 'monetization-calc',
+            title: t('pages.monetization-calc.title')
         }
     ]));
 
@@ -42892,6 +45237,9 @@ return (_ctx, _cache) => {
       : createCommentVNode("v-if", true),
     (activeItem.value?.id === 'revenue_2026')
       ? (openBlock(), createBlock(Calc, { key: 2 }))
+      : createCommentVNode("v-if", true),
+    (activeItem.value?.id === 'monetization-calc')
+      ? (openBlock(), createBlock(MonetizationCalc, { key: 3 }))
       : createCommentVNode("v-if", true),
     createVNode(Ready, {
       page: "home",
